@@ -5,9 +5,9 @@ from datasets import Dataset,DatasetDict
 
 def execute_data_preparation_pipeline(train_data_path,validation_data_path,tokenizer,label2id)->DatasetDict:
     # load train an validation data
-    with open(train_data_path) as f:
+    with open(train_data_path,encoding='utf-8') as f:
         train_data: ClinAISDataset = ClinAISDataset(**json.load(f))
-    with open(validation_data_path) as f:
+    with open(validation_data_path,encoding='utf-8') as f:
         validation_data: ClinAISDataset = ClinAISDataset(**json.load(f))
 
     # create dataset dict for train and validation splits

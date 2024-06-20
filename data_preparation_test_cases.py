@@ -12,7 +12,7 @@ from WordListSplitter import WordListSplitter
 class TestDataPreparation(unittest.TestCase):
     
     def setUp(self):
-        with open('./ClinAIS_dataset/clinais.train.json') as f:
+        with open('./ClinAIS_dataset/clinais.train.json',encoding='utf-8') as f:
             self.dataset: ClinAISDataset = ClinAISDataset(**json.load(f))  
         self.label2id,self.id2label = create_label_id_dictionaries(ClinicalSections.list())
     

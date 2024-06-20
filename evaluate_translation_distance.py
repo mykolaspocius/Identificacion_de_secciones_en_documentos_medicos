@@ -9,9 +9,9 @@ def levenshtein_distance(t1:str,t2:str):
     return pylev.levenshtein(t1.split(" "),t2.split(" "))
 
 def evaluate_levinshtein_distance(original_set_path,translated_set_path):
-    with open(original_set_path) as f:
+    with open(original_set_path,encoding='utf-8') as f:
         original_data : ClinAISDataset = ClinAISDataset(**json.load(f))
-    with open(translated_set_path) as f:
+    with open(translated_set_path,encoding='utf-8') as f:
         translated_data : ClinAISDataset = ClinAISDataset(**json.load(f))
     
     distances = []
@@ -22,7 +22,7 @@ def evaluate_levinshtein_distance(original_set_path,translated_set_path):
     print(round(statistics.mean(distances),2),round(statistics.stdev(distances),2))
 
 def get_dataset_avg_entry_len(dataset_path):
-    with open(dataset_path) as f:
+    with open(dataset_path,encoding='utf-8') as f:
         dataset : ClinAISDataset = ClinAISDataset(**json.load(f))
 
     lengths = []

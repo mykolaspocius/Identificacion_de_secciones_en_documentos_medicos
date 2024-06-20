@@ -39,11 +39,11 @@ def translate_dataset_and_save(dataset_path,translated_dataset_path):
             f.write(ClinAISDataset(annotated_entries = {}).toJson())
 
     print("Loading dataset for translation...")
-    with open(dataset_path) as f:
+    with open(dataset_path,encoding='utf-8') as f:
         dataset : ClinAISDataset = ClinAISDataset(**json.load(f))
 
     print("Loading dataset of translated data...")
-    with open(translated_dataset_path) as f:
+    with open(translated_dataset_path,encoding='utf-8') as f:
         translated_dataset : ClinAISDataset = ClinAISDataset(**json.load(f))
     print(f"Translated dataset has {len(translated_dataset.annotated_entries.keys())} entries")
 
@@ -99,10 +99,10 @@ def translate_dataset_and_save(dataset_path,translated_dataset_path):
     print("Done")
 
 def create_augmented_dataset(train_set_path,translated_train_set_path,save_path):
-    with open(train_set_path) as f:
+    with open(train_set_path,encoding='utf-8') as f:
         train_set : ClinAISDataset = ClinAISDataset(**json.load(f))
 
-    with open(translated_train_set_path) as f:
+    with open(translated_train_set_path,encoding='utf-8') as f:
         translated_train_set : ClinAISDataset = ClinAISDataset(**json.load(f))
 
 

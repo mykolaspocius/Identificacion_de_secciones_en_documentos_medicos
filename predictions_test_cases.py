@@ -9,7 +9,7 @@ from predictions import split_entry,get_text_splits,make_prediction,create_b_ann
 class TestPredictions(unittest.TestCase):
     
     def setUp(self):
-        with open('./ClinAIS_dataset/clinais.dev.json') as f:
+        with open('./ClinAIS_dataset/clinais.dev.json',encoding='utf-8') as f:
             self.dataset: ClinAISDataset = ClinAISDataset(**json.load(f))  
         finetuned_model_path="./finetuned_models/model1/checkpoint-355"
         self.model = pipeline( "token-classification", model=finetuned_model_path, aggregation_strategy="simple")

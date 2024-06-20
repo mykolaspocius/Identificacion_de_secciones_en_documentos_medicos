@@ -91,7 +91,7 @@ def process_entry(entry:Entry,model):
 
 
 def create_predictions_file(dataset_path,save_predicted_path,model):
-    with open(dataset_path) as f:
+    with open(dataset_path,encoding='utf-8') as f:
         dataset: ClinAISDataset = ClinAISDataset(**json.load(f))  
 
     for _,entry in tqdm(dataset.annotated_entries.items()):

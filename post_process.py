@@ -168,7 +168,7 @@ class PostProcess():
 
 def post_process_dataset(dataset_path,save_postprocessed_path):
 
-    with open(dataset_path) as f:
+    with open(dataset_path,encoding='utf-8') as f:
         dataset: ClinAISDataset = ClinAISDataset(**json.load(f))  
 
     for _,entry in tqdm(dataset.annotated_entries.items()):

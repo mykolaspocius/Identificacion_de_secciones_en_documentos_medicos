@@ -4,9 +4,9 @@ import matplotlib.pyplot as plt
 from dataset_model import *
 
 sections = ClinicalSections.list()
-with open('./ClinAIS_dataset/clinais.train.json') as f:
+with open('./ClinAIS_dataset/clinais.train.json',encoding='utf-8') as f:
     train_data: ClinAISDataset = ClinAISDataset(**json.load(f))
-with open('./ClinAIS_dataset/clinais.dev.json') as f:
+with open('./ClinAIS_dataset/clinais.dev.json',encoding='utf-8') as f:
     val_data: ClinAISDataset = ClinAISDataset(**json.load(f))
 
 train_data_section_counts = {label : 0 for label in sections}
