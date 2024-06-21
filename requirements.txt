@@ -1,0 +1,9 @@
+datasets>=2.18.0
+evaluate>=0.4.1
+numpy>=1.24.1
+pandas>=2.2.2
+pydantic>=2.7.1
+transformers>=4.35.2
+accelerate>=0.20.1
+seqeval>=1
+peft>=0.11.1
