@@ -1,4 +1,4 @@
-from train_model import get_trainer
+from train_model import get_trainer,get_peft_trainer
 from transformers import (
     TrainingArguments,
 )
@@ -83,6 +83,27 @@ def get_trainer_M4(
             per_device_train_batch_size=4,
             per_device_eval_batch_size=4,
             num_train_epochs=10,
+            weight_decay=3.73e-03,
+            evaluation_strategy="epoch",
+            save_strategy="epoch",
+            load_best_model_at_end=True,
+        )
+    )
+
+def get_trainer_M5(
+        train_data_path="./ClinAIS_dataset/clinais.train.augmented.json",
+        val_data_path="./ClinAIS_dataset/clinais.dev.json",
+        output_dir='./models/model5'):
+    return get_peft_trainer(
+        train_data_path=train_data_path,
+        val_data_path=val_data_path,
+        base_model_id="PlanTL-GOB-ES/longformer-base-4096-biomedical-clinical-es",
+        train_args=TrainingArguments(
+            output_dir=output_dir,
+            learning_rate=8.48e-5,
+            per_device_train_batch_size=4,
+            per_device_eval_batch_size=4,
+            num_train_epochs=20,
             weight_decay=3.73e-03,
             evaluation_strategy="epoch",
             save_strategy="epoch",
