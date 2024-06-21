@@ -9,7 +9,7 @@ from transformers import (
 def get_trainer_M1(
         train_data_path="./ClinAIS_dataset/clinais.train.json",
         val_data_path="./ClinAIS_dataset/clinais.dev.json",
-        output_dir='./finetuned_models/model1'):
+        output_dir='./models/model1'):
     return get_trainer(
         train_data_path=train_data_path,
         val_data_path=val_data_path,
@@ -30,7 +30,7 @@ def get_trainer_M1(
 def get_trainer_M2(
         train_data_path="./ClinAIS_dataset/clinais.train.json",
         val_data_path="./ClinAIS_dataset/clinais.dev.json",
-        output_dir='./finetuned_models/model2'):
+        output_dir='./models/model2'):
     return get_trainer(
         train_data_path=train_data_path,
         val_data_path=val_data_path,
@@ -51,7 +51,7 @@ def get_trainer_M2(
 def get_trainer_M3(
         train_data_path="./ClinAIS_dataset/clinais.train.augmented.json",
         val_data_path="./ClinAIS_dataset/clinais.dev.json",
-        output_dir='./finetuned_models/model3'):
+        output_dir='./models/model3'):
     return get_trainer(
         train_data_path=train_data_path,
         val_data_path=val_data_path,
@@ -72,7 +72,7 @@ def get_trainer_M3(
 def get_trainer_M4(
         train_data_path="./ClinAIS_dataset/clinais.train.augmented.json",
         val_data_path="./ClinAIS_dataset/clinais.dev.json",
-        output_dir='./finetuned_models/model4'):
+        output_dir='./models/model4'):
     return get_trainer(
         train_data_path=train_data_path,
         val_data_path=val_data_path,
