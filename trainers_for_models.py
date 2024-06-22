@@ -90,119 +90,10 @@ def get_trainer_M4(
             load_best_model_at_end=True,
         )
     )
-
 def get_trainer_M5(
         train_data_path="./ClinAIS_dataset/clinais.train.augmented.json",
         val_data_path="./ClinAIS_dataset/clinais.dev.json",
         output_dir='./models/model5'):
-    return get_trainer(
-        train_data_path=train_data_path,
-        val_data_path=val_data_path,
-        base_model_id="PlanTL-GOB-ES/longformer-base-4096-biomedical-clinical-es",
-        train_args=TrainingArguments(
-            output_dir=output_dir,
-            learning_rate=8.48e-5,
-            per_device_train_batch_size=4,
-            per_device_eval_batch_size=4,
-            num_train_epochs=20,
-            weight_decay=3.73e-03,
-            evaluation_strategy="epoch",
-            save_strategy="epoch",
-            load_best_model_at_end=True,
-        ),
-        adapter= LoraConfig(
-            task_type=TaskType.TOKEN_CLS,
-            inference_mode=False,
-            r=16, 
-            lora_alpha=16,
-            lora_dropout=0.1,
-            bias="all",
-            target_modules=[
-                "query",
-                "key",
-                "value",
-                "query_global",
-                "key_global",
-                "value_global"
-            ]
-        )
-    )
-
-def get_trainer_M6(
-        train_data_path="./ClinAIS_dataset/clinais.train.augmented.json",
-        val_data_path="./ClinAIS_dataset/clinais.dev.json",
-        output_dir='./models/model6'):
-    return get_trainer(
-        train_data_path=train_data_path,
-        val_data_path=val_data_path,
-        base_model_id="PlanTL-GOB-ES/longformer-base-4096-biomedical-clinical-es",
-        train_args=TrainingArguments(
-            output_dir=output_dir,
-            learning_rate=8.48e-5,
-            per_device_train_batch_size=4,
-            per_device_eval_batch_size=4,
-            num_train_epochs=12,
-            weight_decay=3.73e-03,
-            evaluation_strategy="epoch",
-            save_strategy="epoch",
-            load_best_model_at_end=True,
-        ),
-        adapter= LoraConfig(
-            task_type=TaskType.TOKEN_CLS,
-            inference_mode=False,
-            r=16, 
-            lora_alpha=16,
-            lora_dropout=0.1,
-            bias="all",
-            target_modules=[
-                "query",
-                "key",
-                "value",
-                "query_global",
-                "key_global",
-                "value_global",
-                "dense"
-            ]
-        )
-    )
-def get_trainer_M7(
-        train_data_path="./ClinAIS_dataset/clinais.train.augmented.json",
-        val_data_path="./ClinAIS_dataset/clinais.dev.json",
-        output_dir='./models/model7'):
-    return get_trainer(
-        train_data_path=train_data_path,
-        val_data_path=val_data_path,
-        base_model_id="/content/drive/MyDrive/Identificacion_de_secciones_en_documentos_medicos/models/model4/checkpoint-3910",
-        train_args=TrainingArguments(
-            output_dir=output_dir,
-            learning_rate=8.48e-5,
-            per_device_train_batch_size=4,
-            per_device_eval_batch_size=4,
-            num_train_epochs=12,
-            weight_decay=3.73e-03,
-            evaluation_strategy="epoch",
-            save_strategy="epoch",
-            load_best_model_at_end=True,
-        ),
-        adapter= LoraConfig(
-            task_type=TaskType.TOKEN_CLS,
-            inference_mode=False,
-            r=16, 
-            lora_alpha=16,
-            lora_dropout=0.1,
-            bias="all",
-            target_modules=[
-                "query",
-                "key",
-                "value"
-            ]
-        )
-    )
-
-def get_trainer_M8(
-        train_data_path="./ClinAIS_dataset/clinais.train.augmented.json",
-        val_data_path="./ClinAIS_dataset/clinais.dev.json",
-        output_dir='./models/model8'):
     return get_trainer(
         train_data_path=train_data_path,
         val_data_path=val_data_path,
@@ -221,3 +112,75 @@ def get_trainer_M8(
         adapter= None,
         freez=True
     )
+# def get_trainer_M6(
+#         train_data_path="./ClinAIS_dataset/clinais.train.augmented.json",
+#         val_data_path="./ClinAIS_dataset/clinais.dev.json",
+#         output_dir='./models/model6'):
+#     return get_trainer(
+#         train_data_path=train_data_path,
+#         val_data_path=val_data_path,
+#         base_model_id="PlanTL-GOB-ES/longformer-base-4096-biomedical-clinical-es",
+#         train_args=TrainingArguments(
+#             output_dir=output_dir,
+#             learning_rate=8.48e-5,
+#             per_device_train_batch_size=4,
+#             per_device_eval_batch_size=4,
+#             num_train_epochs=12,
+#             weight_decay=3.73e-03,
+#             evaluation_strategy="epoch",
+#             save_strategy="epoch",
+#             load_best_model_at_end=True,
+#         ),
+#         adapter= LoraConfig(
+#             task_type=TaskType.TOKEN_CLS,
+#             inference_mode=False,
+#             r=16, 
+#             lora_alpha=16,
+#             lora_dropout=0.1,
+#             bias="all",
+#             target_modules=[
+#                 "query",
+#                 "key",
+#                 "value",
+#                 "query_global",
+#                 "key_global",
+#                 "value_global",
+#                 "dense"
+#             ]
+#         )
+#     )
+# def get_trainer_M7(
+#         train_data_path="./ClinAIS_dataset/clinais.train.augmented.json",
+#         val_data_path="./ClinAIS_dataset/clinais.dev.json",
+#         output_dir='./models/model7'):
+#     return get_trainer(
+#         train_data_path=train_data_path,
+#         val_data_path=val_data_path,
+#         base_model_id="/content/drive/MyDrive/Identificacion_de_secciones_en_documentos_medicos/models/model4/checkpoint-3910",
+#         train_args=TrainingArguments(
+#             output_dir=output_dir,
+#             learning_rate=8.48e-5,
+#             per_device_train_batch_size=4,
+#             per_device_eval_batch_size=4,
+#             num_train_epochs=12,
+#             weight_decay=3.73e-03,
+#             evaluation_strategy="epoch",
+#             save_strategy="epoch",
+#             load_best_model_at_end=True,
+#         ),
+#         adapter= LoraConfig(
+#             task_type=TaskType.TOKEN_CLS,
+#             inference_mode=False,
+#             r=16, 
+#             lora_alpha=16,
+#             lora_dropout=0.1,
+#             bias="all",
+#             target_modules=[
+#                 "query",
+#                 "key",
+#                 "value"
+#             ]
+#         )
+#     )
+
+
