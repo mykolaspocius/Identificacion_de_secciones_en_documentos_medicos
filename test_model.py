@@ -8,7 +8,7 @@ from peft import LoraConfig, TaskType, get_peft_model
 from misc import create_label_id_dictionaries
 from dataset_model import *
 
-def test(finetuned_model_path,test_dataset_path,save_predictions_path,save_evaluated_path,peft_config=None):
+def test(finetuned_model_path,test_dataset_path,save_predictions_path,save_evaluated_path,peft_config:LoraConfig=None):
     print("Creating predictions for dataset...")
     if(peft_config!=None):
         label2id,id2label = create_label_id_dictionaries(ClinicalSections.list())
