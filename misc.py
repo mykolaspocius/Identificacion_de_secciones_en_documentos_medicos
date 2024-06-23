@@ -12,13 +12,13 @@ import json
 from pathlib import Path
 import matplotlib.pyplot as plt
 
-def graph_trainning_loss(log_path: Path):
-    with open(log_path) as f:
-        log = json.load(f)
+def graph_trainning_loss(trainer_state_path: Path):
+    with open(trainer_state_path,encoding='utf-8') as f:
+        trainer_state = json.load(f)
 
     eval_loss = []
     train_loss = []
-    for data in log:
+    for data in trainer_state['log_history']:
         if('eval_loss' in data.keys()):
             eval_loss.append([data['epoch'],data['eval_loss']])
         elif('loss' in data.keys()):
@@ -35,3 +35,4 @@ def graph_trainning_loss(log_path: Path):
     plt.legend()
     plt.show()
 
+graph_trainning_loss("./models/model2/trainer_state.json")
