@@ -1,3 +1,5 @@
+# This file contains function used to prepear a data corpus for passing it to Trainer
+
 from dataset_model import *
 from data_preparation import create_dataset_object,tokenize_dataset_dict
 from datasets import Dataset,DatasetDict
