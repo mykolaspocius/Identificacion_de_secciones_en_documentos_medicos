@@ -55,8 +55,14 @@ def test(finetuned_model_path,test_dataset_path,save_predictions_path,save_evalu
 #     save_evaluated_path="./finetuned_models/model4/predictions_evaluated.json")
 
 
+# test(
+#     finetuned_model_path="./models/model5/checkpoint-3910",
+#     test_dataset_path="./ClinAIS_dataset/clinais.dev.json",
+#     save_predictions_path="./models/model5/predictions.json",
+#     save_evaluated_path="./models/model5/predictions_evaluated.json")
+
 test(
-    finetuned_model_path="./models/model5/checkpoint-3910",
+    finetuned_model_path="./models/model6/checkpoint-782",
     test_dataset_path="./ClinAIS_dataset/clinais.dev.json",
-    save_predictions_path="./models/model5/predictions.json",
-    save_evaluated_path="./models/model5/predictions_evaluated.json")
+    save_predictions_path="./models/model6/predictions.json",
+    save_evaluated_path="./models/model6/predictions_evaluated.json")

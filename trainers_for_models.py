@@ -4,7 +4,7 @@ from transformers import (
 )
 from peft import LoraConfig,TaskType
 
-# This file contains functions to get Trainer objecto to execute train() for the 5 models
+# This file contains functions to get Trainer objecto to execute train() for the models
 # It this done this way, so it is possible to call this funcitons on Google Colab and execute te trainning on GPU
 
 def get_trainer_M1(
@@ -112,43 +112,27 @@ def get_trainer_M5(
         adapter= None,
         freez=True
     )
-# def get_trainer_M6(
-#         train_data_path="./ClinAIS_dataset/clinais.train.augmented.json",
-#         val_data_path="./ClinAIS_dataset/clinais.dev.json",
-#         output_dir='./models/model6'):
-#     return get_trainer(
-#         train_data_path=train_data_path,
-#         val_data_path=val_data_path,
-#         base_model_id="PlanTL-GOB-ES/longformer-base-4096-biomedical-clinical-es",
-#         train_args=TrainingArguments(
-#             output_dir=output_dir,
-#             learning_rate=8.48e-5,
-#             per_device_train_batch_size=4,
-#             per_device_eval_batch_size=4,
-#             num_train_epochs=12,
-#             weight_decay=3.73e-03,
-#             evaluation_strategy="epoch",
-#             save_strategy="epoch",
-#             load_best_model_at_end=True,
-#         ),
-#         adapter= LoraConfig(
-#             task_type=TaskType.TOKEN_CLS,
-#             inference_mode=False,
-#             r=16, 
-#             lora_alpha=16,
-#             lora_dropout=0.1,
-#             bias="all",
-#             target_modules=[
-#                 "query",
-#                 "key",
-#                 "value",
-#                 "query_global",
-#                 "key_global",
-#                 "value_global",
-#                 "dense"
-#             ]
-#         )
-#     )
+def get_trainer_M6(
+        train_data_path="./ClinAIS_dataset/clinais.train.augmented.json",
+        val_data_path="./ClinAIS_dataset/clinais.dev.json",
+        output_dir='./models/model6'):
+    return get_trainer(
+        train_data_path=train_data_path,
+        val_data_path=val_data_path,
+        base_model_id="PlanTL-GOB-ES/longformer-base-4096-biomedical-clinical-es",
+        train_args=TrainingArguments(
+            output_dir=output_dir,
+            learning_rate=20e-7,
+            per_device_train_batch_size=4,
+            per_device_eval_batch_size=4,
+            num_train_epochs=20,
+            weight_decay=3.73e-02,
+            evaluation_strategy="epoch",
+            save_strategy="epoch",
+            load_best_model_at_end=True,
+        ),
+        freez=True
+    )
 # def get_trainer_M7(
 #         train_data_path="./ClinAIS_dataset/clinais.train.augmented.json",
 #         val_data_path="./ClinAIS_dataset/clinais.dev.json",

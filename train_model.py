@@ -12,7 +12,7 @@ from transformers import (
 from peft import get_peft_config, PeftModel, PeftConfig, get_peft_model, LoraConfig, TaskType
 
 def get_trainer(base_model_id:str,train_data_path:str,val_data_path:str,train_args:TrainingArguments,freez:bool=False,adapter:PeftConfig=None)->Trainer:
-    hf_token="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"
+    hf_token="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"
     # create label->number and number->label relations
     label2id,id2label = create_label_id_dictionaries(ClinicalSections.list())
     # get model tokenizer

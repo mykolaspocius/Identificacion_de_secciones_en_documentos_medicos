@@ -76,5 +76,15 @@ def plot_error_per_section(results, category_names):
     return fig, ax
 
 
-plot_error_per_section(results, category_names)
-plt.show()
+# plot_error_per_section(results, category_names)
+# plt.show()
+
+with open("./models/model4/predictions.json",encoding='utf-8') as f:
+    predictions : ClinAISDataset = ClinAISDataset(**json.load(f)) 
+
+"S0034-98872009000700011-1"  
+    
+prediction = predictions.annotated_entries["S0034-98872012001000013-1"]
+print(prediction.section_annotation.gold)
+print()
+print(prediction.section_annotation.prediction)
