@@ -1,6 +1,6 @@
 Identificación de secciones en textos médicos en español.
 Se puede probar el funcionamiento del sistema en: https://huggingface.co/spaces/mpocius/Identificacion_de_secciones_en_textos_medicos?logs=container
-* Descripción del problema
+# Descripción del problema
   Existe un tipo de textos concreto en el dominio de textos m ́edicos que se denomina notas m ́edicas
 y se suele denotar con el acr ́onimo EHR (Electronical Health Records). Son documentos que
 contienen informaci ́on referente al estado de salud de los pacientes y les sirve a los profesionales
