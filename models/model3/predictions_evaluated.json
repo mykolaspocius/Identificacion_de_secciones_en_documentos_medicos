@@ -1,0 +1,3681 @@
+{
+  "Weighted B2": 0.8022017434072725,
+  "Scores per file": {
+    "S0004-06142005000200009-3": {
+      "B2": 0.8741633936344644,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "EXPLORATION"
+        ],
+        "additions": [],
+        "deletions": [
+          "EXPLORATION"
+        ],
+        "substitutions": [],
+        "transpositions": [],
+        "count_edits": 0.5033464254621425,
+        "weighted_transpositions": 0
+      }
+    },
+    "S0004-06142005001000015-1": {
+      "B2": 0.8836193474247148,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "PRESENT_ILLNESS",
+          "EXPLORATION",
+          "TREATMENT",
+          "EVOLUTION",
+          "EVOLUTION"
+        ],
+        "additions": [
+          "EXPLORATION"
+        ],
+        "deletions": [
+          "TREATMENT"
+        ],
+        "substitutions": [],
+        "transpositions": [],
+        "count_edits": 1.0474258731775667,
+        "weighted_transpositions": 0
+      }
+    },
+    "S0004-06142006000100012-1": {
+      "B2": 1.0,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "PRESENT_ILLNESS",
+          "EXPLORATION",
+          "TREATMENT",
+          "EVOLUTION"
+        ],
+        "additions": [],
+        "deletions": [],
+        "substitutions": [],
+        "transpositions": [],
+        "count_edits": 0.0,
+        "weighted_transpositions": 0
+      }
+    },
+    "S0004-06142006000300009-1": {
+      "B2": 1.0,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PRESENT_ILLNESS",
+          "EXPLORATION",
+          "TREATMENT",
+          "EVOLUTION"
+        ],
+        "additions": [],
+        "deletions": [],
+        "substitutions": [],
+        "transpositions": [
+          {
+            "start_offset": 7,
+            "end_offset": 8,
+            "boundary": "PAST_MEDICAL_HISTORY"
+          }
+        ],
+        "count_edits": 0.0,
+        "weighted_transpositions": 0
+      }
+    },
+    "S0004-06142006000600010-1": {
+      "B2": 1.0,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "PRESENT_ILLNESS",
+          "EXPLORATION",
+          "TREATMENT",
+          "EXPLORATION",
+          "EVOLUTION"
+        ],
+        "additions": [],
+        "deletions": [],
+        "substitutions": [],
+        "transpositions": [],
+        "count_edits": 0.0,
+        "weighted_transpositions": 0
+      }
+    },
+    "S0004-06142006000900004-1": {
+      "B2": 1.0,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "EXPLORATION"
+        ],
+        "additions": [],
+        "deletions": [],
+        "substitutions": [],
+        "transpositions": [],
+        "count_edits": 0.0,
+        "weighted_transpositions": 0
+      }
+    },
+    "S0004-06142007000200014-1": {
+      "B2": 0.93300499831383,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "EXPLORATION",
+          "TREATMENT",
+          "EXPLORATION"
+        ],
+        "additions": [],
+        "deletions": [],
+        "substitutions": [],
+        "transpositions": [
+          {
+            "start_offset": 5,
+            "end_offset": 7,
+            "boundary": "PAST_MEDICAL_HISTORY"
+          },
+          {
+            "start_offset": 55,
+            "end_offset": 82,
+            "boundary": "PRESENT_ILLNESS"
+          }
+        ],
+        "count_edits": 0.6278848690040517,
+        "weighted_transpositions": 0.6278848690040517
+      }
+    },
+    "S0004-06142007000600011-2": {
+      "B2": 0.7438112034534012,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "TREATMENT",
+          "EVOLUTION"
+        ],
+        "additions": [
+          "PAST_MEDICAL_HISTORY"
+        ],
+        "deletions": [],
+        "substitutions": [
+          [
+            "DERIVED_FROM/TO",
+            "PRESENT_ILLNESS"
+          ]
+        ],
+        "transpositions": [
+          {
+            "start_offset": 30,
+            "end_offset": 40,
+            "boundary": "EXPLORATION"
+          }
+        ],
+        "count_edits": 1.9993073730421393,
+        "weighted_transpositions": 0.19596094757999674
+      }
+    },
+    "S0004-06142008000300009-1": {
+      "B2": 0.8836193474247148,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "DERIVED_FROM/TO",
+          "TREATMENT",
+          "EXPLORATION",
+          "TREATMENT",
+          "EXPLORATION"
+        ],
+        "additions": [
+          "EXPLORATION"
+        ],
+        "deletions": [
+          "EXPLORATION"
+        ],
+        "substitutions": [],
+        "transpositions": [],
+        "count_edits": 1.0474258731775667,
+        "weighted_transpositions": 0
+      }
+    },
+    "S0004-06142008000300010-1": {
+      "B2": 0.9023838841735918,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "EXPLORATION",
+          "TREATMENT",
+          "EXPLORATION",
+          "TREATMENT"
+        ],
+        "additions": [
+          "EXPLORATION"
+        ],
+        "deletions": [],
+        "substitutions": [],
+        "transpositions": [
+          {
+            "start_offset": 108,
+            "end_offset": 120,
+            "boundary": "EVOLUTION"
+          }
+        ],
+        "count_edits": 0.7562422213116122,
+        "weighted_transpositions": 0.2528957958494697
+      }
+    },
+    "S0004-06142008000600013-2": {
+      "B2": 0.9040986822134911,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "EXPLORATION",
+          "TREATMENT",
+          "EVOLUTION"
+        ],
+        "additions": [
+          "TREATMENT"
+        ],
+        "deletions": [],
+        "substitutions": [],
+        "transpositions": [
+          {
+            "start_offset": 277,
+            "end_offset": 278,
+            "boundary": "PAST_MEDICAL_HISTORY"
+          },
+          {
+            "start_offset": 140,
+            "end_offset": 157,
+            "boundary": "EXPLORATION"
+          }
+        ],
+        "count_edits": 0.9191381988704438,
+        "weighted_transpositions": 0.4157917734083013
+      }
+    },
+    "S0004-06142008000700012-1": {
+      "B2": 1.0,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "EXPLORATION",
+          "TREATMENT",
+          "EXPLORATION",
+          "EVOLUTION"
+        ],
+        "additions": [],
+        "deletions": [],
+        "substitutions": [],
+        "transpositions": [],
+        "count_edits": 0.0,
+        "weighted_transpositions": 0
+      }
+    },
+    "S0004-06142009000300006-1": {
+      "B2": 0.788412006379813,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "EXPLORATION",
+          "TREATMENT",
+          "EVOLUTION",
+          "TREATMENT"
+        ],
+        "additions": [
+          "TREATMENT",
+          "EXPLORATION",
+          "EVOLUTION"
+        ],
+        "deletions": [],
+        "substitutions": [],
+        "transpositions": [
+          {
+            "start_offset": 199,
+            "end_offset": 214,
+            "boundary": "EXPLORATION"
+          }
+        ],
+        "count_edits": 2.2534121320549927,
+        "weighted_transpositions": 0.35
+      }
+    },
+    "S0004-06142009000400006-1": {
+      "B2": 0.6245049756110704,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "EXPLORATION",
+          "TREATMENT",
+          "EXPLORATION",
+          "TREATMENT",
+          "EXPLORATION",
+          "EVOLUTION"
+        ],
+        "additions": [
+          "EXPLORATION",
+          "FAMILY_HISTORY"
+        ],
+        "deletions": [
+          "PRESENT_ILLNESS",
+          "EVOLUTION",
+          "EXPLORATION"
+        ],
+        "substitutions": [],
+        "transpositions": [],
+        "count_edits": 4.881435317056083,
+        "weighted_transpositions": 0
+      }
+    },
+    "S0004-06142009000400008-1": {
+      "B2": 0.849053845189277,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "FAMILY_HISTORY",
+          "EXPLORATION",
+          "EVOLUTION"
+        ],
+        "additions": [
+          "PAST_MEDICAL_HISTORY",
+          "EXPLORATION"
+        ],
+        "deletions": [],
+        "substitutions": [],
+        "transpositions": [
+          {
+            "start_offset": 41,
+            "end_offset": 49,
+            "boundary": "PAST_MEDICAL_HISTORY"
+          },
+          {
+            "start_offset": 249,
+            "end_offset": 261,
+            "boundary": "TREATMENT"
+          }
+        ],
+        "count_edits": 1.4488657433213152,
+        "weighted_transpositions": 0.4014398701437485
+      }
+    },
+    "S0034-98872005000300009-1": {
+      "B2": 0.7996281749486509,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "PRESENT_ILLNESS",
+          "EXPLORATION",
+          "TREATMENT",
+          "TREATMENT",
+          "EVOLUTION"
+        ],
+        "additions": [
+          "EVOLUTION"
+        ],
+        "deletions": [],
+        "substitutions": [
+          [
+            "EXPLORATION",
+            "EVOLUTION"
+          ]
+        ],
+        "transpositions": [],
+        "count_edits": 1.8033464254621425,
+        "weighted_transpositions": 0
+      }
+    },
+    "S0034-98872005000500009-3": {
+      "B2": 0.3898205853679896,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "EVOLUTION",
+          "EXPLORATION"
+        ],
+        "additions": [],
+        "deletions": [
+          "PAST_MEDICAL_HISTORY",
+          "PRESENT_ILLNESS",
+          "EXPLORATION",
+          "TREATMENT",
+          "TREATMENT"
+        ],
+        "substitutions": [],
+        "transpositions": [],
+        "count_edits": 4.881435317056083,
+        "weighted_transpositions": 0
+      }
+    },
+    "S0034-98872005000800011-1": {
+      "B2": 1.0,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "PRESENT_ILLNESS",
+          "EXPLORATION",
+          "TREATMENT",
+          "EXPLORATION",
+          "EVOLUTION"
+        ],
+        "additions": [],
+        "deletions": [],
+        "substitutions": [],
+        "transpositions": [],
+        "count_edits": 0.0,
+        "weighted_transpositions": 0
+      }
+    },
+    "S0034-98872006000200011-1": {
+      "B2": 0.9440726193930953,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "PRESENT_ILLNESS",
+          "EXPLORATION",
+          "TREATMENT",
+          "EVOLUTION",
+          "EXPLORATION",
+          "EVOLUTION"
+        ],
+        "additions": [],
+        "deletions": [
+          "TREATMENT"
+        ],
+        "substitutions": [],
+        "transpositions": [],
+        "count_edits": 0.5033464254621425,
+        "weighted_transpositions": 0
+      }
+    },
+    "S0034-98872006000600013-1": {
+      "B2": 0.7743901291890112,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "PRESENT_ILLNESS",
+          "EXPLORATION",
+          "TREATMENT",
+          "EVOLUTION",
+          "EXPLORATION",
+          "TREATMENT",
+          "EVOLUTION"
+        ],
+        "additions": [
+          "EXPLORATION",
+          "EVOLUTION"
+        ],
+        "deletions": [],
+        "substitutions": [
+          [
+            "EVOLUTION",
+            "EXPLORATION"
+          ]
+        ],
+        "transpositions": [
+          {
+            "start_offset": 278,
+            "end_offset": 310,
+            "boundary": "TREATMENT"
+          }
+        ],
+        "count_edits": 3.0092288967119334,
+        "weighted_transpositions": 0.6618030235343664
+      }
+    },
+    "S0034-98872007000200010-1": {
+      "B2": 0.9612993822456912,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "PRESENT_ILLNESS",
+          "DERIVED_FROM/TO",
+          "EXPLORATION",
+          "EXPLORATION"
+        ],
+        "additions": [],
+        "deletions": [],
+        "substitutions": [],
+        "transpositions": [
+          {
+            "start_offset": 21,
+            "end_offset": 22,
+            "boundary": "EXPLORATION"
+          },
+          {
+            "start_offset": 188,
+            "end_offset": 189,
+            "boundary": "TREATMENT"
+          },
+          {
+            "start_offset": 35,
+            "end_offset": 53,
+            "boundary": "PAST_MEDICAL_HISTORY"
+          }
+        ],
+        "count_edits": 0.44710420415053026,
+        "weighted_transpositions": 0.44710420415053026
+      }
+    },
+    "S0034-98872007000500011-1": {
+      "B2": 0.5690131939747852,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PRESENT_ILLNESS",
+          "EXPLORATION",
+          "EVOLUTION",
+          "TREATMENT",
+          "EVOLUTION",
+          "EXPLORATION"
+        ],
+        "additions": [
+          "TREATMENT",
+          "TREATMENT"
+        ],
+        "deletions": [
+          "FAMILY_HISTORY",
+          "TREATMENT",
+          "EXPLORATION",
+          "TREATMENT",
+          "EVOLUTION"
+        ],
+        "substitutions": [],
+        "transpositions": [
+          {
+            "start_offset": 4,
+            "end_offset": 12,
+            "boundary": "PAST_MEDICAL_HISTORY"
+          },
+          {
+            "start_offset": 232,
+            "end_offset": 248,
+            "boundary": "EXPLORATION"
+          }
+        ],
+        "count_edits": 7.528578059988861,
+        "weighted_transpositions": 0.5317667391692641
+      }
+    },
+    "S0034-98872007000600010-1": {
+      "B2": 0.9619391264382733,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "PRESENT_ILLNESS",
+          "EXPLORATION",
+          "TREATMENT",
+          "EXPLORATION",
+          "EXPLORATION",
+          "EVOLUTION",
+          "TREATMENT",
+          "EVOLUTION",
+          "EXPLORATION"
+        ],
+        "additions": [],
+        "deletions": [],
+        "substitutions": [],
+        "transpositions": [
+          {
+            "start_offset": 151,
+            "end_offset": 170,
+            "boundary": "EVOLUTION"
+          }
+        ],
+        "count_edits": 0.476649654085075,
+        "weighted_transpositions": 0.476649654085075
+      }
+    },
+    "S0034-98872007001200012-1": {
+      "B2": 0.5598038967683086,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "EXPLORATION",
+          "TREATMENT",
+          "EXPLORATION",
+          "EVOLUTION",
+          "TREATMENT",
+          "TREATMENT",
+          "EVOLUTION"
+        ],
+        "additions": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "PRESENT_ILLNESS",
+          "EVOLUTION",
+          "EXPLORATION",
+          "EVOLUTION",
+          "TREATMENT",
+          "EVOLUTION"
+        ],
+        "deletions": [],
+        "substitutions": [],
+        "transpositions": [
+          {
+            "start_offset": 346,
+            "end_offset": 358,
+            "boundary": "EXPLORATION"
+          }
+        ],
+        "count_edits": 8.252402217545525,
+        "weighted_transpositions": 0.2528957958494697
+      }
+    },
+    "S0034-98872008000100011-1": {
+      "B2": 0.8168900940382892,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "EXPLORATION",
+          "TREATMENT",
+          "EVOLUTION",
+          "EXPLORATION",
+          "EXPLORATION",
+          "TREATMENT",
+          "EVOLUTION",
+          "TREATMENT",
+          "EVOLUTION",
+          "TREATMENT",
+          "EVOLUTION",
+          "EXPLORATION",
+          "EVOLUTION"
+        ],
+        "additions": [
+          "EVOLUTION",
+          "TREATMENT"
+        ],
+        "deletions": [
+          "PAST_MEDICAL_HISTORY",
+          "TREATMENT"
+        ],
+        "substitutions": [],
+        "transpositions": [
+          {
+            "start_offset": 203,
+            "end_offset": 210,
+            "boundary": "TREATMENT"
+          },
+          {
+            "start_offset": 379,
+            "end_offset": 394,
+            "boundary": "EVOLUTION"
+          }
+        ],
+        "count_edits": 3.9407715671707266,
+        "weighted_transpositions": 0.47865440991071695
+      }
+    },
+    "S0034-98872008001000011-1": {
+      "B2": 0.9159208561502697,
+      "Statistics": {
+        "matches": [
+          "DERIVED_FROM/TO",
+          "DERIVED_FROM/TO",
+          "TREATMENT",
+          "EVOLUTION",
+          "EXPLORATION"
+        ],
+        "additions": [
+          "PRESENT_ILLNESS"
+        ],
+        "deletions": [],
+        "substitutions": [],
+        "transpositions": [
+          {
+            "start_offset": 23,
+            "end_offset": 25,
+            "boundary": "PAST_MEDICAL_HISTORY"
+          },
+          {
+            "start_offset": 16,
+            "end_offset": 20,
+            "boundary": "PRESENT_ILLNESS"
+          },
+          {
+            "start_offset": 44,
+            "end_offset": 60,
+            "boundary": "EXPLORATION"
+          }
+        ],
+        "count_edits": 0.9697360830835844,
+        "weighted_transpositions": 0.46638965762144197
+      }
+    },
+    "S0034-98872009000400014-1": {
+      "B2": 0.7996281749486509,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "PRESENT_ILLNESS",
+          "EXPLORATION",
+          "EVOLUTION",
+          "EXPLORATION",
+          "EXPLORATION"
+        ],
+        "additions": [],
+        "deletions": [
+          "TREATMENT"
+        ],
+        "substitutions": [
+          [
+            "EVOLUTION",
+            "DERIVED_FROM/TO"
+          ]
+        ],
+        "transpositions": [],
+        "count_edits": 1.8033464254621425,
+        "weighted_transpositions": 0
+      }
+    },
+    "S0034-98872009000700011-1": {
+      "B2": 0.5826718357712223,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "EXPLORATION",
+          "EVOLUTION",
+          "EXPLORATION",
+          "TREATMENT"
+        ],
+        "additions": [
+          "EXPLORATION",
+          "PRESENT_ILLNESS",
+          "EXPLORATION",
+          "TREATMENT",
+          "EVOLUTION"
+        ],
+        "deletions": [
+          "PAST_MEDICAL_HISTORY",
+          "DERIVED_FROM/TO"
+        ],
+        "substitutions": [],
+        "transpositions": [
+          {
+            "start_offset": 445,
+            "end_offset": 450,
+            "boundary": "TREATMENT"
+          },
+          {
+            "start_offset": 4,
+            "end_offset": 12,
+            "boundary": "PAST_MEDICAL_HISTORY"
+          },
+          {
+            "start_offset": 24,
+            "end_offset": 32,
+            "boundary": "PRESENT_ILLNESS"
+          },
+          {
+            "start_offset": 205,
+            "end_offset": 224,
+            "boundary": "TREATMENT"
+          },
+          {
+            "start_offset": 313,
+            "end_offset": 348,
+            "boundary": "EXPLORATION"
+          }
+        ],
+        "count_edits": 8.538026931533247,
+        "weighted_transpositions": 1.54121561071365
+      }
+    },
+    "S0034-98872009000900010-1": {
+      "B2": 0.4559665395547338,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "EVOLUTION",
+          "EXPLORATION",
+          "EVOLUTION",
+          "TREATMENT"
+        ],
+        "additions": [
+          "PAST_MEDICAL_HISTORY",
+          "TREATMENT",
+          "EXPLORATION",
+          "EXPLORATION",
+          "EVOLUTION"
+        ],
+        "deletions": [
+          "TREATMENT"
+        ],
+        "substitutions": [
+          [
+            "EVOLUTION",
+            "TREATMENT"
+          ]
+        ],
+        "transpositions": [
+          {
+            "start_offset": 74,
+            "end_offset": 89,
+            "boundary": "EXPLORATION"
+          },
+          {
+            "start_offset": 390,
+            "end_offset": 415,
+            "boundary": "EXPLORATION"
+          },
+          {
+            "start_offset": 322,
+            "end_offset": 358,
+            "boundary": "EVOLUTION"
+          }
+        ],
+        "count_edits": 8.907270144750218,
+        "weighted_transpositions": 1.6273486975230729
+      }
+    },
+    "S0034-98872010000100010-1": {
+      "B2": 0.8503677324032048,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "EXPLORATION",
+          "TREATMENT",
+          "EVOLUTION"
+        ],
+        "additions": [
+          "PRESENT_ILLNESS"
+        ],
+        "deletions": [
+          "PRESENT_ILLNESS"
+        ],
+        "substitutions": [],
+        "transpositions": [],
+        "count_edits": 1.0474258731775667,
+        "weighted_transpositions": 0
+      }
+    },
+    "S0034-98872010000900009-1": {
+      "B2": 0.5072091503177173,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "EXPLORATION",
+          "TREATMENT",
+          "EXPLORATION",
+          "TREATMENT",
+          "EVOLUTION"
+        ],
+        "additions": [
+          "PAST_MEDICAL_HISTORY",
+          "TREATMENT",
+          "EVOLUTION",
+          "TREATMENT",
+          "EVOLUTION",
+          "TREATMENT",
+          "TREATMENT",
+          "EXPLORATION"
+        ],
+        "deletions": [
+          "EVOLUTION"
+        ],
+        "substitutions": [],
+        "transpositions": [
+          {
+            "start_offset": 75,
+            "end_offset": 86,
+            "boundary": "PRESENT_ILLNESS"
+          },
+          {
+            "start_offset": 303,
+            "end_offset": 318,
+            "boundary": "EXPLORATION"
+          }
+        ],
+        "count_edits": 9.573275189516607,
+        "weighted_transpositions": 0.573350345914925
+      }
+    },
+    "S0034-98872010001100013-1": {
+      "B2": 0.9496653574537858,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PRESENT_ILLNESS",
+          "EXPLORATION",
+          "TREATMENT",
+          "EXPLORATION",
+          "TREATMENT",
+          "EVOLUTION"
+        ],
+        "additions": [],
+        "deletions": [
+          "EVOLUTION"
+        ],
+        "substitutions": [],
+        "transpositions": [
+          {
+            "start_offset": 4,
+            "end_offset": 5,
+            "boundary": "PAST_MEDICAL_HISTORY"
+          }
+        ],
+        "count_edits": 0.5033464254621425,
+        "weighted_transpositions": 0
+      }
+    },
+    "S0034-98872011000300010-1": {
+      "B2": 0.9813226346217552,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "PRESENT_ILLNESS",
+          "EXPLORATION",
+          "EXPLORATION",
+          "EVOLUTION"
+        ],
+        "additions": [],
+        "deletions": [],
+        "substitutions": [],
+        "transpositions": [
+          {
+            "start_offset": 274,
+            "end_offset": 277,
+            "boundary": "EXPLORATION"
+          },
+          {
+            "start_offset": 145,
+            "end_offset": 151,
+            "boundary": "TREATMENT"
+          }
+        ],
+        "count_edits": 0.1833491742629401,
+        "weighted_transpositions": 0.1833491742629401
+      }
+    },
+    "S0034-98872011000300011-3": {
+      "B2": 0.9370816968172322,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "PRESENT_ILLNESS",
+          "TREATMENT",
+          "EVOLUTION"
+        ],
+        "additions": [],
+        "deletions": [
+          "EVOLUTION"
+        ],
+        "substitutions": [],
+        "transpositions": [
+          {
+            "start_offset": 29,
+            "end_offset": 30,
+            "boundary": "EXPLORATION"
+          }
+        ],
+        "count_edits": 0.5033464254621425,
+        "weighted_transpositions": 0
+      }
+    },
+    "S0034-98872011000700014-1": {
+      "B2": 0.8531753203903636,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "EXPLORATION",
+          "TREATMENT"
+        ],
+        "additions": [
+          "TREATMENT",
+          "DERIVED_FROM/TO"
+        ],
+        "deletions": [],
+        "substitutions": [],
+        "transpositions": [
+          {
+            "start_offset": 92,
+            "end_offset": 101,
+            "boundary": "PRESENT_ILLNESS"
+          },
+          {
+            "start_offset": 238,
+            "end_offset": 248,
+            "boundary": "EVOLUTION"
+          }
+        ],
+        "count_edits": 1.4143702984248852,
+        "weighted_transpositions": 0.3669444252473183
+      }
+    },
+    "S0034-98872011001000014-1": {
+      "B2": 0.9301716084548289,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "PRESENT_ILLNESS",
+          "EXPLORATION",
+          "TREATMENT",
+          "EVOLUTION",
+          "EXPLORATION",
+          "TREATMENT",
+          "EVOLUTION",
+          "EXPLORATION",
+          "TREATMENT"
+        ],
+        "additions": [],
+        "deletions": [
+          "TREATMENT",
+          "EVOLUTION"
+        ],
+        "substitutions": [],
+        "transpositions": [
+          {
+            "start_offset": 151,
+            "end_offset": 152,
+            "boundary": "TREATMENT"
+          }
+        ],
+        "count_edits": 1.0474258731775667,
+        "weighted_transpositions": 0
+      }
+    },
+    "S0034-98872011001100013-1": {
+      "B2": 0.43824192983540317,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "TREATMENT",
+          "EXPLORATION"
+        ],
+        "additions": [
+          "FAMILY_HISTORY",
+          "PAST_MEDICAL_HISTORY",
+          "PRESENT_ILLNESS",
+          "TREATMENT",
+          "EXPLORATION"
+        ],
+        "deletions": [
+          "FAMILY_HISTORY",
+          "EXPLORATION"
+        ],
+        "substitutions": [],
+        "transpositions": [
+          {
+            "start_offset": 70,
+            "end_offset": 80,
+            "boundary": "EXPLORATION"
+          }
+        ],
+        "count_edits": 7.192772268399595,
+        "weighted_transpositions": 0.19596094757999674
+      }
+    },
+    "S0034-98872012000100012-1": {
+      "B2": 0.8029309533647662,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "PRESENT_ILLNESS",
+          "EXPLORATION",
+          "DERIVED_FROM/TO",
+          "TREATMENT",
+          "TREATMENT",
+          "EVOLUTION",
+          "EXPLORATION",
+          "EVOLUTION"
+        ],
+        "additions": [
+          "EXPLORATION",
+          "TREATMENT",
+          "EVOLUTION"
+        ],
+        "deletions": [],
+        "substitutions": [],
+        "transpositions": [
+          {
+            "start_offset": 518,
+            "end_offset": 541,
+            "boundary": "EXPLORATION"
+          },
+          {
+            "start_offset": 110,
+            "end_offset": 138,
+            "boundary": "EXPLORATION"
+          }
+        ],
+        "count_edits": 3.1119987752487113,
+        "weighted_transpositions": 1.2085866431937184
+      }
+    },
+    "S0034-98872012000300011-1": {
+      "B2": 0.8751717702794208,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PRESENT_ILLNESS",
+          "EXPLORATION",
+          "EVOLUTION",
+          "TREATMENT",
+          "EXPLORATION",
+          "TREATMENT",
+          "EVOLUTION",
+          "EXPLORATION",
+          "EVOLUTION"
+        ],
+        "additions": [
+          "EVOLUTION",
+          "EVOLUTION",
+          "TREATMENT"
+        ],
+        "deletions": [],
+        "substitutions": [],
+        "transpositions": [
+          {
+            "start_offset": 4,
+            "end_offset": 8,
+            "boundary": "PAST_MEDICAL_HISTORY"
+          },
+          {
+            "start_offset": 73,
+            "end_offset": 79,
+            "boundary": "DERIVED_FROM/TO"
+          }
+        ],
+        "count_edits": 2.0978131680684413,
+        "weighted_transpositions": 0.19440103601344857
+      }
+    },
+    "S0034-98872012000300012-4": {
+      "B2": 1.0,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "PRESENT_ILLNESS",
+          "EXPLORATION",
+          "TREATMENT",
+          "EXPLORATION",
+          "EVOLUTION"
+        ],
+        "additions": [],
+        "deletions": [],
+        "substitutions": [],
+        "transpositions": [],
+        "count_edits": 0.0,
+        "weighted_transpositions": 0
+      }
+    },
+    "S0034-98872012000400011-1": {
+      "B2": 0.8254290211370723,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "PRESENT_ILLNESS",
+          "EXPLORATION"
+        ],
+        "additions": [],
+        "deletions": [
+          "EVOLUTION",
+          "EXPLORATION"
+        ],
+        "substitutions": [],
+        "transpositions": [],
+        "count_edits": 1.0474258731775667,
+        "weighted_transpositions": 0
+      }
+    },
+    "S0034-98872012000800012-2": {
+      "B2": 0.7685352400923192,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "EXPLORATION",
+          "TREATMENT",
+          "EVOLUTION",
+          "TREATMENT",
+          "EVOLUTION",
+          "EXPLORATION",
+          "TREATMENT",
+          "TREATMENT"
+        ],
+        "additions": [
+          "EXPLORATION",
+          "EXPLORATION"
+        ],
+        "deletions": [
+          "TREATMENT",
+          "EXPLORATION"
+        ],
+        "substitutions": [],
+        "transpositions": [
+          {
+            "start_offset": 328,
+            "end_offset": 338,
+            "boundary": "EVOLUTION"
+          }
+        ],
+        "count_edits": 3.658078104840006,
+        "weighted_transpositions": 0.19596094757999674
+      }
+    },
+    "S0034-98872012001000013-1": {
+      "B2": 0.74,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "PRESENT_ILLNESS",
+          "EXPLORATION"
+        ],
+        "additions": [],
+        "deletions": [],
+        "substitutions": [
+          [
+            "EVOLUTION",
+            "TREATMENT"
+          ]
+        ],
+        "transpositions": [],
+        "count_edits": 1.3,
+        "weighted_transpositions": 0
+      }
+    },
+    "S0034-98872013000100015-1": {
+      "B2": 0.6026531186511919,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "EXPLORATION",
+          "TREATMENT",
+          "EVOLUTION",
+          "EXPLORATION",
+          "EVOLUTION",
+          "EXPLORATION",
+          "TREATMENT",
+          "EXPLORATION"
+        ],
+        "additions": [
+          "EVOLUTION",
+          "EXPLORATION",
+          "TREATMENT",
+          "EVOLUTION"
+        ],
+        "deletions": [
+          "PAST_MEDICAL_HISTORY",
+          "PRESENT_ILLNESS",
+          "DERIVED_FROM/TO"
+        ],
+        "substitutions": [],
+        "transpositions": [
+          {
+            "start_offset": 367,
+            "end_offset": 373,
+            "boundary": "EVOLUTION"
+          }
+        ],
+        "count_edits": 7.10804536408659,
+        "weighted_transpositions": 0.11123404326699185
+      }
+    },
+    "S0034-98872013000500015-2": {
+      "B2": 0.8865277285623501,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "TREATMENT",
+          "EXPLORATION",
+          "EXPLORATION",
+          "TREATMENT",
+          "EVOLUTION"
+        ],
+        "additions": [],
+        "deletions": [
+          "PAST_MEDICAL_HISTORY",
+          "PRESENT_ILLNESS"
+        ],
+        "substitutions": [],
+        "transpositions": [
+          {
+            "start_offset": 46,
+            "end_offset": 52,
+            "boundary": "EVOLUTION"
+          },
+          {
+            "start_offset": 121,
+            "end_offset": 130,
+            "boundary": "TREATMENT"
+          }
+        ],
+        "count_edits": 1.3296433941118802,
+        "weighted_transpositions": 0.2822175209343134
+      }
+    },
+    "S0034-98872013000600016-1": {
+      "B2": 0.8646868262167208,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "PRESENT_ILLNESS",
+          "TREATMENT",
+          "EVOLUTION",
+          "EXPLORATION",
+          "TREATMENT",
+          "EXPLORATION",
+          "EXPLORATION",
+          "TREATMENT"
+        ],
+        "additions": [
+          "EXPLORATION",
+          "TREATMENT",
+          "TREATMENT"
+        ],
+        "deletions": [],
+        "substitutions": [],
+        "transpositions": [
+          {
+            "start_offset": 377,
+            "end_offset": 383,
+            "boundary": "EVOLUTION"
+          }
+        ],
+        "count_edits": 2.014646175321985,
+        "weighted_transpositions": 0.11123404326699185
+      }
+    },
+    "S0034-98872013000900016-2": {
+      "B2": 0.8836193474247148,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "PRESENT_ILLNESS",
+          "EXPLORATION",
+          "EVOLUTION",
+          "TREATMENT",
+          "EVOLUTION"
+        ],
+        "additions": [
+          "EXPLORATION",
+          "TREATMENT"
+        ],
+        "deletions": [],
+        "substitutions": [],
+        "transpositions": [],
+        "count_edits": 1.0474258731775667,
+        "weighted_transpositions": 0
+      }
+    },
+    "S0034-98872014000300014-2": {
+      "B2": 0.8893149766720256,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "TREATMENT",
+          "EVOLUTION",
+          "EVOLUTION",
+          "EXPLORATION",
+          "TREATMENT",
+          "EVOLUTION"
+        ],
+        "additions": [],
+        "deletions": [
+          "PRESENT_ILLNESS"
+        ],
+        "substitutions": [],
+        "transpositions": [
+          {
+            "start_offset": 116,
+            "end_offset": 125,
+            "boundary": "TREATMENT"
+          },
+          {
+            "start_offset": 14,
+            "end_offset": 49,
+            "boundary": "EXPLORATION"
+          }
+        ],
+        "count_edits": 1.345672429821403,
+        "weighted_transpositions": 0.8423260043592605
+      }
+    },
+    "S0034-98872014000500015-2": {
+      "B2": 0.9274129776142443,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "EXPLORATION"
+        ],
+        "additions": [],
+        "deletions": [
+          "TREATMENT"
+        ],
+        "substitutions": [],
+        "transpositions": [
+          {
+            "start_offset": 49,
+            "end_offset": 50,
+            "boundary": "PRESENT_ILLNESS"
+          },
+          {
+            "start_offset": 175,
+            "end_offset": 178,
+            "boundary": "EVOLUTION"
+          }
+        ],
+        "count_edits": 0.5754615564580907,
+        "weighted_transpositions": 0.07211513099594824
+      }
+    },
+    "S0034-98872014000600014-1": {
+      "B2": 0.6432663733756842,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "EXPLORATION",
+          "TREATMENT",
+          "TREATMENT",
+          "EXPLORATION",
+          "TREATMENT",
+          "EVOLUTION"
+        ],
+        "additions": [
+          "PAST_MEDICAL_HISTORY",
+          "PRESENT_ILLNESS",
+          "EVOLUTION",
+          "TREATMENT",
+          "EVOLUTION"
+        ],
+        "deletions": [],
+        "substitutions": [],
+        "transpositions": [
+          {
+            "start_offset": 119,
+            "end_offset": 123,
+            "boundary": "EXPLORATION"
+          }
+        ],
+        "count_edits": 4.96460230980254,
+        "weighted_transpositions": 0.08316699274645672
+      }
+    },
+    "S0034-98872014000700015-2": {
+      "B2": 0.5672353553424988,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "EXPLORATION",
+          "TREATMENT",
+          "EVOLUTION"
+        ],
+        "additions": [
+          "EVOLUTION",
+          "EXPLORATION"
+        ],
+        "deletions": [
+          "PAST_MEDICAL_HISTORY",
+          "PRESENT_ILLNESS"
+        ],
+        "substitutions": [],
+        "transpositions": [],
+        "count_edits": 3.4621171572600096,
+        "weighted_transpositions": 0
+      }
+    },
+    "S0034-98872014001200014-1": {
+      "B2": 0.9450211716415777,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "PRESENT_ILLNESS",
+          "EXPLORATION",
+          "TREATMENT",
+          "EVOLUTION",
+          "EXPLORATION",
+          "TREATMENT"
+        ],
+        "additions": [
+          "DERIVED_FROM/TO"
+        ],
+        "deletions": [],
+        "substitutions": [],
+        "transpositions": [
+          {
+            "start_offset": 306,
+            "end_offset": 311,
+            "boundary": "EVOLUTION"
+          }
+        ],
+        "count_edits": 0.5994817068102208,
+        "weighted_transpositions": 0.09613528134807836
+      }
+    },
+    "S0034-98872015000500015-1": {
+      "B2": 0.7440817707443081,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "TREATMENT",
+          "EVOLUTION",
+          "EVOLUTION",
+          "TREATMENT",
+          "EVOLUTION",
+          "EXPLORATION"
+        ],
+        "additions": [
+          "EVOLUTION"
+        ],
+        "deletions": [
+          "PRESENT_ILLNESS",
+          "EXPLORATION",
+          "TREATMENT"
+        ],
+        "substitutions": [],
+        "transpositions": [
+          {
+            "start_offset": 93,
+            "end_offset": 98,
+            "boundary": "TREATMENT"
+          }
+        ],
+        "count_edits": 3.558252438608088,
+        "weighted_transpositions": 0.09613528134807836
+      }
+    },
+    "S0034-98872015000600015-1": {
+      "B2": 0.8731058578630005,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "PRESENT_ILLNESS",
+          "EXPLORATION",
+          "TREATMENT",
+          "EXPLORATION",
+          "TREATMENT",
+          "EXPLORATION",
+          "EVOLUTION",
+          "DERIVED_FROM/TO",
+          "EXPLORATION",
+          "EVOLUTION"
+        ],
+        "additions": [
+          "DERIVED_FROM/TO",
+          "EXPLORATION",
+          "TREATMENT"
+        ],
+        "deletions": [],
+        "substitutions": [],
+        "transpositions": [],
+        "count_edits": 1.9034121320549928,
+        "weighted_transpositions": 0
+      }
+    },
+    "S0034-98872015000900017-1": {
+      "B2": 0.8065204869454777,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PRESENT_ILLNESS",
+          "EXPLORATION",
+          "TREATMENT",
+          "EXPLORATION",
+          "TREATMENT",
+          "EVOLUTION",
+          "TREATMENT",
+          "EVOLUTION",
+          "TREATMENT",
+          "EVOLUTION"
+        ],
+        "additions": [
+          "FAMILY_HISTORY",
+          "EXPLORATION"
+        ],
+        "deletions": [
+          "EVOLUTION",
+          "TREATMENT"
+        ],
+        "substitutions": [],
+        "transpositions": [
+          {
+            "start_offset": 10,
+            "end_offset": 14,
+            "boundary": "PAST_MEDICAL_HISTORY"
+          },
+          {
+            "start_offset": 277,
+            "end_offset": 282,
+            "boundary": "EXPLORATION"
+          }
+        ],
+        "count_edits": 3.6414194313545445,
+        "weighted_transpositions": 0.17930227409453509
+      }
+    },
+    "S0034-98872016000400015-1": {
+      "B2": 0.6104189992547495,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "PRESENT_ILLNESS",
+          "EXPLORATION",
+          "EXPLORATION",
+          "EXPLORATION",
+          "EXPLORATION",
+          "TREATMENT"
+        ],
+        "additions": [
+          "DERIVED_FROM/TO",
+          "EVOLUTION",
+          "TREATMENT",
+          "TREATMENT"
+        ],
+        "deletions": [
+          "EVOLUTION",
+          "EVOLUTION",
+          "EXPLORATION",
+          "EVOLUTION"
+        ],
+        "substitutions": [
+          [
+            "EVOLUTION",
+            "EXPLORATION"
+          ]
+        ],
+        "transpositions": [
+          {
+            "start_offset": 306,
+            "end_offset": 307,
+            "boundary": "EVOLUTION"
+          },
+          {
+            "start_offset": 204,
+            "end_offset": 209,
+            "boundary": "TREATMENT"
+          },
+          {
+            "start_offset": 527,
+            "end_offset": 534,
+            "boundary": "EVOLUTION"
+          },
+          {
+            "start_offset": 364,
+            "end_offset": 372,
+            "boundary": "TREATMENT"
+          },
+          {
+            "start_offset": 435,
+            "end_offset": 455,
+            "boundary": "EVOLUTION"
+          }
+        ],
+        "count_edits": 10.176879239669132,
+        "weighted_transpositions": 0.8773728179730774
+      }
+    },
+    "S0034-98872017000200015-1": {
+      "B2": 0.30147784466492694,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "TREATMENT",
+          "EXPLORATION",
+          "EVOLUTION"
+        ],
+        "additions": [
+          "PRESENT_ILLNESS",
+          "EXPLORATION",
+          "PAST_MEDICAL_HISTORY",
+          "EXPLORATION",
+          "TREATMENT",
+          "EVOLUTION",
+          "TREATMENT",
+          "EXPLORATION",
+          "TREATMENT",
+          "EVOLUTION",
+          "EVOLUTION",
+          "TREATMENT"
+        ],
+        "deletions": [
+          "PRESENT_ILLNESS"
+        ],
+        "substitutions": [],
+        "transpositions": [
+          {
+            "start_offset": 312,
+            "end_offset": 335,
+            "boundary": "EXPLORATION"
+          }
+        ],
+        "count_edits": 13.571345553671106,
+        "weighted_transpositions": 0.571345590089283
+      }
+    },
+    "S0034-98872017001101490-2": {
+      "B2": 0.9494778572174263,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "PRESENT_ILLNESS",
+          "EXPLORATION",
+          "EXPLORATION",
+          "TREATMENT",
+          "EVOLUTION",
+          "EXPLORATION",
+          "EVOLUTION"
+        ],
+        "additions": [],
+        "deletions": [],
+        "substitutions": [],
+        "transpositions": [
+          {
+            "start_offset": 102,
+            "end_offset": 123,
+            "boundary": "TREATMENT"
+          }
+        ],
+        "count_edits": 0.5290165223326784,
+        "weighted_transpositions": 0.5290165223326784
+      }
+    },
+    "S0034-98872018000700933-1": {
+      "B2": 0.7620734834931259,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "EXPLORATION",
+          "TREATMENT",
+          "EXPLORATION"
+        ],
+        "additions": [
+          "PAST_MEDICAL_HISTORY",
+          "EXPLORATION"
+        ],
+        "deletions": [
+          "PRESENT_ILLNESS"
+        ],
+        "substitutions": [],
+        "transpositions": [],
+        "count_edits": 1.9034121320549928,
+        "weighted_transpositions": 0
+      }
+    },
+    "S0034-98872018000700938-1": {
+      "B2": 0.9771547151818414,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "PRESENT_ILLNESS",
+          "EXPLORATION",
+          "TREATMENT",
+          "EXPLORATION",
+          "EVOLUTION",
+          "TREATMENT"
+        ],
+        "additions": [],
+        "deletions": [],
+        "substitutions": [],
+        "transpositions": [
+          {
+            "start_offset": 184,
+            "end_offset": 195,
+            "boundary": "EVOLUTION"
+          }
+        ],
+        "count_edits": 0.223350345914925,
+        "weighted_transpositions": 0.223350345914925
+      }
+    },
+    "S0034-98872018001101356-1": {
+      "B2": 0.9440771956166835,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "PRESENT_ILLNESS",
+          "EXPLORATION",
+          "EXPLORATION",
+          "TREATMENT",
+          "EVOLUTION"
+        ],
+        "additions": [],
+        "deletions": [],
+        "substitutions": [],
+        "transpositions": [
+          {
+            "start_offset": 136,
+            "end_offset": 155,
+            "boundary": "DERIVED_FROM/TO"
+          }
+        ],
+        "count_edits": 0.476649654085075,
+        "weighted_transpositions": 0.476649654085075
+      }
+    },
+    "S0120-41572007000500002-5": {
+      "B2": 0.9161089290896429,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "PRESENT_ILLNESS",
+          "EXPLORATION",
+          "TREATMENT"
+        ],
+        "additions": [
+          "EXPLORATION"
+        ],
+        "deletions": [],
+        "substitutions": [],
+        "transpositions": [],
+        "count_edits": 0.5033464254621425,
+        "weighted_transpositions": 0
+      }
+    },
+    "S0120-41572009000100005-3": {
+      "B2": 0.8503677324032048,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "FAMILY_HISTORY",
+          "PAST_MEDICAL_HISTORY",
+          "EXPLORATION"
+        ],
+        "additions": [],
+        "deletions": [
+          "PRESENT_ILLNESS",
+          "TREATMENT"
+        ],
+        "substitutions": [],
+        "transpositions": [],
+        "count_edits": 1.0474258731775667,
+        "weighted_transpositions": 0
+      }
+    },
+    "S0120-41572011000200003-2": {
+      "B2": 0.664653446688919,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "TREATMENT",
+          "TREATMENT",
+          "EVOLUTION"
+        ],
+        "additions": [
+          "EXPLORATION"
+        ],
+        "deletions": [
+          "PAST_MEDICAL_HISTORY"
+        ],
+        "substitutions": [
+          [
+            "EXPLORATION",
+            "EVOLUTION"
+          ]
+        ],
+        "transpositions": [],
+        "count_edits": 2.347425873177567,
+        "weighted_transpositions": 0
+      }
+    },
+    "S0120-41572013000400005-1": {
+      "B2": 0.8413823223287507,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "PRESENT_ILLNESS",
+          "DERIVED_FROM/TO",
+          "EXPLORATION",
+          "PAST_MEDICAL_HISTORY",
+          "TREATMENT",
+          "EXPLORATION",
+          "TREATMENT"
+        ],
+        "additions": [
+          "EXPLORATION"
+        ],
+        "deletions": [
+          "EVOLUTION",
+          "EVOLUTION"
+        ],
+        "substitutions": [],
+        "transpositions": [],
+        "count_edits": 1.9034121320549928,
+        "weighted_transpositions": 0
+      }
+    },
+    "S0120-41572015000400003-1": {
+      "B2": 0.5728627537694896,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "PRESENT_ILLNESS",
+          "EXPLORATION",
+          "EVOLUTION",
+          "EXPLORATION",
+          "TREATMENT",
+          "EVOLUTION"
+        ],
+        "additions": [
+          "TREATMENT",
+          "EVOLUTION",
+          "TREATMENT",
+          "EXPLORATION",
+          "PRESENT_ILLNESS",
+          "EXPLORATION"
+        ],
+        "deletions": [],
+        "substitutions": [],
+        "transpositions": [],
+        "count_edits": 5.979921447227145,
+        "weighted_transpositions": 0
+      }
+    },
+    "S0210-48062004000300005-1": {
+      "B2": 0.431997826191376,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "EXPLORATION",
+          "TREATMENT"
+        ],
+        "additions": [
+          "EVOLUTION",
+          "TREATMENT",
+          "EXPLORATION",
+          "EVOLUTION",
+          "EVOLUTION"
+        ],
+        "deletions": [
+          "EXPLORATION"
+        ],
+        "substitutions": [],
+        "transpositions": [
+          {
+            "start_offset": 275,
+            "end_offset": 284,
+            "boundary": "TREATMENT"
+          }
+        ],
+        "count_edits": 6.1509049248944665,
+        "weighted_transpositions": 0.17098347766732155
+      }
+    },
+    "S0210-48062005000100020-1": {
+      "B2": 1.0,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "EXPLORATION",
+          "TREATMENT",
+          "EXPLORATION"
+        ],
+        "additions": [],
+        "deletions": [],
+        "substitutions": [],
+        "transpositions": [],
+        "count_edits": 0.0,
+        "weighted_transpositions": 0
+      }
+    },
+    "S0210-48062005000400015-1": {
+      "B2": 0.8323267233444595,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "EXPLORATION",
+          "TREATMENT",
+          "EXPLORATION",
+          "EVOLUTION",
+          "EXPLORATION",
+          "TREATMENT",
+          "EVOLUTION"
+        ],
+        "additions": [
+          "TREATMENT",
+          "EXPLORATION"
+        ],
+        "deletions": [],
+        "substitutions": [
+          [
+            "DERIVED_FROM/TO",
+            "PRESENT_ILLNESS"
+          ]
+        ],
+        "transpositions": [
+          {
+            "start_offset": 226,
+            "end_offset": 228,
+            "boundary": "TREATMENT"
+          }
+        ],
+        "count_edits": 2.347425873177567,
+        "weighted_transpositions": 0
+      }
+    },
+    "S0210-48062005000700011-1": {
+      "B2": 1.0,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "EXPLORATION",
+          "TREATMENT",
+          "EXPLORATION",
+          "EVOLUTION"
+        ],
+        "additions": [],
+        "deletions": [],
+        "substitutions": [],
+        "transpositions": [],
+        "count_edits": 0.0,
+        "weighted_transpositions": 0
+      }
+    },
+    "S0210-48062006001000011-1": {
+      "B2": 1.0,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "PRESENT_ILLNESS",
+          "EXPLORATION",
+          "TREATMENT",
+          "EXPLORATION",
+          "TREATMENT",
+          "EVOLUTION"
+        ],
+        "additions": [],
+        "deletions": [],
+        "substitutions": [],
+        "transpositions": [],
+        "count_edits": 0.0,
+        "weighted_transpositions": 0
+      }
+    },
+    "S0210-48062007000300012-2": {
+      "B2": 0.7794836786016309,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "PRESENT_ILLNESS",
+          "EXPLORATION",
+          "TREATMENT"
+        ],
+        "additions": [
+          "TREATMENT"
+        ],
+        "deletions": [],
+        "substitutions": [
+          [
+            "EVOLUTION",
+            "EXPLORATION"
+          ]
+        ],
+        "transpositions": [
+          {
+            "start_offset": 115,
+            "end_offset": 123,
+            "boundary": "EVOLUTION"
+          }
+        ],
+        "count_edits": 1.9518904997564213,
+        "weighted_transpositions": 0.14854407429427882
+      }
+    },
+    "S0210-48062007001000014-1": {
+      "B2": 0.9040216057478364,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "PRESENT_ILLNESS",
+          "EXPLORATION",
+          "TREATMENT",
+          "EVOLUTION",
+          "TREATMENT",
+          "EVOLUTION"
+        ],
+        "additions": [],
+        "deletions": [
+          "EXPLORATION"
+        ],
+        "substitutions": [],
+        "transpositions": [
+          {
+            "start_offset": 224,
+            "end_offset": 244,
+            "boundary": "EXPLORATION"
+          }
+        ],
+        "count_edits": 1.0073854778821456,
+        "weighted_transpositions": 0.5040390524200032
+      }
+    },
+    "S0210-48062007001000017-1": {
+      "B2": 1.0,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "EXPLORATION",
+          "TREATMENT"
+        ],
+        "additions": [],
+        "deletions": [],
+        "substitutions": [],
+        "transpositions": [],
+        "count_edits": 0.0,
+        "weighted_transpositions": 0
+      }
+    },
+    "S0210-48062009000400018-2": {
+      "B2": 0.9280933677911225,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "EXPLORATION",
+          "TREATMENT",
+          "EVOLUTION",
+          "TREATMENT"
+        ],
+        "additions": [],
+        "deletions": [
+          "EVOLUTION"
+        ],
+        "substitutions": [],
+        "transpositions": [],
+        "count_edits": 0.5033464254621425,
+        "weighted_transpositions": 0
+      }
+    },
+    "S0210-48062009000800014-1": {
+      "B2": 1.0,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "EXPLORATION",
+          "TREATMENT",
+          "EXPLORATION"
+        ],
+        "additions": [],
+        "deletions": [],
+        "substitutions": [],
+        "transpositions": [],
+        "count_edits": 0.0,
+        "weighted_transpositions": 0
+      }
+    },
+    "S0210-48062010000700011-2": {
+      "B2": 0.6580136107720738,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "EXPLORATION",
+          "EXPLORATION",
+          "TREATMENT",
+          "EVOLUTION"
+        ],
+        "additions": [
+          "EVOLUTION",
+          "EXPLORATION",
+          "EXPLORATION",
+          "TREATMENT"
+        ],
+        "deletions": [],
+        "substitutions": [],
+        "transpositions": [
+          {
+            "start_offset": 151,
+            "end_offset": 162,
+            "boundary": "EVOLUTION"
+          }
+        ],
+        "count_edits": 3.6854675031749347,
+        "weighted_transpositions": 0.223350345914925
+      }
+    },
+    "S0210-56912007000300007-1": {
+      "B2": 0.532375949063035,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "EXPLORATION",
+          "TREATMENT",
+          "EVOLUTION",
+          "EXPLORATION",
+          "EVOLUTION"
+        ],
+        "additions": [
+          "EXPLORATION",
+          "TREATMENT",
+          "DERIVED_FROM/TO",
+          "EXPLORATION",
+          "TREATMENT",
+          "EVOLUTION"
+        ],
+        "deletions": [],
+        "substitutions": [],
+        "transpositions": [
+          {
+            "start_offset": 451,
+            "end_offset": 466,
+            "boundary": "TREATMENT"
+          },
+          {
+            "start_offset": 358,
+            "end_offset": 387,
+            "boundary": "TREATMENT"
+          },
+          {
+            "start_offset": 318,
+            "end_offset": 351,
+            "boundary": "EVOLUTION"
+          }
+        ],
+        "count_edits": 7.640640667576655,
+        "weighted_transpositions": 1.66071922034951
+      }
+    },
+    "S0210-56912011000700007-3": {
+      "B2": 0.8503677324032048,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "PRESENT_ILLNESS",
+          "TREATMENT",
+          "EVOLUTION"
+        ],
+        "additions": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY"
+        ],
+        "deletions": [],
+        "substitutions": [],
+        "transpositions": [],
+        "count_edits": 1.0474258731775667,
+        "weighted_transpositions": 0
+      }
+    },
+    "S0211-57352003000300009-1": {
+      "B2": 0.3676433555233091,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "EXPLORATION",
+          "FAMILY_HISTORY",
+          "EXPLORATION"
+        ],
+        "additions": [
+          "EVOLUTION",
+          "EXPLORATION",
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "PAST_MEDICAL_HISTORY",
+          "FAMILY_HISTORY",
+          "PAST_MEDICAL_HISTORY",
+          "EVOLUTION",
+          "EXPLORATION"
+        ],
+        "deletions": [
+          "PRESENT_ILLNESS"
+        ],
+        "substitutions": [],
+        "transpositions": [
+          {
+            "start_offset": 214,
+            "end_offset": 217,
+            "boundary": "PAST_MEDICAL_HISTORY"
+          }
+        ],
+        "count_edits": 10.07210382937446,
+        "weighted_transpositions": 0.07211513099594824
+      }
+    },
+    "S0211-57352014000300007-1": {
+      "B2": 0.2806451612903228,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "DERIVED_FROM/TO",
+          "TREATMENT",
+          "DERIVED_FROM/TO",
+          "FAMILY_HISTORY",
+          "PAST_MEDICAL_HISTORY",
+          "TREATMENT",
+          "EVOLUTION"
+        ],
+        "additions": [
+          "PRESENT_ILLNESS",
+          "DERIVED_FROM/TO",
+          "EXPLORATION",
+          "TREATMENT",
+          "EVOLUTION",
+          "PRESENT_ILLNESS",
+          "EXPLORATION",
+          "TREATMENT",
+          "EXPLORATION",
+          "EVOLUTION",
+          "EXPLORATION",
+          "DERIVED_FROM/TO",
+          "EXPLORATION",
+          "TREATMENT",
+          "EVOLUTION",
+          "TREATMENT",
+          "EVOLUTION",
+          "EXPLORATION"
+        ],
+        "deletions": [
+          "EVOLUTION",
+          "EVOLUTION",
+          "TREATMENT"
+        ],
+        "substitutions": [
+          [
+            "PRESENT_ILLNESS",
+            "EXPLORATION"
+          ]
+        ],
+        "transpositions": [],
+        "count_edits": 22.299999999999994,
+        "weighted_transpositions": 0
+      }
+    },
+    "S0211-69952011000500011-4": {
+      "B2": 0.9895905990992145,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "PRESENT_ILLNESS",
+          "EXPLORATION",
+          "TREATMENT"
+        ],
+        "additions": [],
+        "deletions": [],
+        "substitutions": [],
+        "transpositions": [
+          {
+            "start_offset": 219,
+            "end_offset": 222,
+            "boundary": "EVOLUTION"
+          }
+        ],
+        "count_edits": 0.07211513099594824,
+        "weighted_transpositions": 0.07211513099594824
+      }
+    },
+    "S0211-69952014000500022-1": {
+      "B2": 0.4659113460982421,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "DERIVED_FROM/TO",
+          "EXPLORATION",
+          "TREATMENT",
+          "EVOLUTION"
+        ],
+        "additions": [
+          "DERIVED_FROM/TO",
+          "EXPLORATION",
+          "TREATMENT",
+          "EXPLORATION"
+        ],
+        "deletions": [
+          "PRESENT_ILLNESS",
+          "TREATMENT"
+        ],
+        "substitutions": [],
+        "transpositions": [
+          {
+            "start_offset": 15,
+            "end_offset": 42,
+            "boundary": "PAST_MEDICAL_HISTORY"
+          }
+        ],
+        "count_edits": 6.607806316231197,
+        "weighted_transpositions": 0.6278848690040517
+      }
+    },
+    "S0211-69952014000600007-2": {
+      "B2": 0.9014079241378319,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PRESENT_ILLNESS",
+          "EVOLUTION"
+        ],
+        "additions": [
+          "EXPLORATION"
+        ],
+        "deletions": [],
+        "substitutions": [],
+        "transpositions": [
+          {
+            "start_offset": 4,
+            "end_offset": 10,
+            "boundary": "PAST_MEDICAL_HISTORY"
+          },
+          {
+            "start_offset": 68,
+            "end_offset": 76,
+            "boundary": "TREATMENT"
+          }
+        ],
+        "count_edits": 0.7631245430234131,
+        "weighted_transpositions": 0.25977811756127067
+      }
+    },
+    "S0211-69952014000600007-3": {
+      "B2": 0.9837165507799729,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PRESENT_ILLNESS",
+          "TREATMENT",
+          "EVOLUTION"
+        ],
+        "additions": [],
+        "deletions": [],
+        "substitutions": [],
+        "transpositions": [
+          {
+            "start_offset": 6,
+            "end_offset": 11,
+            "boundary": "PAST_MEDICAL_HISTORY"
+          }
+        ],
+        "count_edits": 0.09613528134807836,
+        "weighted_transpositions": 0.09613528134807836
+      }
+    },
+    "S0211-69952015000600014-1": {
+      "B2": 0.7351423721048327,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "DERIVED_FROM/TO",
+          "PRESENT_ILLNESS",
+          "EXPLORATION",
+          "TREATMENT",
+          "EVOLUTION"
+        ],
+        "additions": [
+          "TREATMENT",
+          "EVOLUTION"
+        ],
+        "deletions": [
+          "TREATMENT",
+          "EVOLUTION"
+        ],
+        "substitutions": [],
+        "transpositions": [
+          {
+            "start_offset": 1,
+            "end_offset": 5,
+            "boundary": "PAST_MEDICAL_HISTORY"
+          },
+          {
+            "start_offset": 39,
+            "end_offset": 45,
+            "boundary": "PAST_MEDICAL_HISTORY"
+          }
+        ],
+        "count_edits": 3.6565181932734583,
+        "weighted_transpositions": 0.19440103601344857
+      }
+    },
+    "S0212-16112008000500014-1": {
+      "B2": 0.4259299944548109,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "EXPLORATION",
+          "TREATMENT",
+          "EXPLORATION",
+          "TREATMENT"
+        ],
+        "additions": [
+          "PRESENT_ILLNESS",
+          "TREATMENT",
+          "PRESENT_ILLNESS"
+        ],
+        "deletions": [
+          "EVOLUTION",
+          "EVOLUTION",
+          "EVOLUTION",
+          "TREATMENT",
+          "EVOLUTION",
+          "TREATMENT",
+          "EVOLUTION",
+          "TREATMENT",
+          "EVOLUTION"
+        ],
+        "substitutions": [],
+        "transpositions": [
+          {
+            "start_offset": 532,
+            "end_offset": 536,
+            "boundary": "EVOLUTION"
+          },
+          {
+            "start_offset": 52,
+            "end_offset": 66,
+            "boundary": "TREATMENT"
+          }
+        ],
+        "count_edits": 12.399944079475219,
+        "weighted_transpositions": 0.39994432787147144
+      }
+    },
+    "S0212-16112009000300016-1": {
+      "B2": 0.8735911727945681,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "TREATMENT",
+          "TREATMENT",
+          "EVOLUTION",
+          "TREATMENT",
+          "EVOLUTION",
+          "EXPLORATION",
+          "TREATMENT",
+          "EVOLUTION"
+        ],
+        "additions": [
+          "PAST_MEDICAL_HISTORY",
+          "PRESENT_ILLNESS"
+        ],
+        "deletions": [],
+        "substitutions": [],
+        "transpositions": [
+          {
+            "start_offset": 47,
+            "end_offset": 68,
+            "boundary": "EXPLORATION"
+          }
+        ],
+        "count_edits": 1.5764423955102451,
+        "weighted_transpositions": 0.5290165223326784
+      }
+    },
+    "S0212-71992001000200006-1": {
+      "B2": 0.9138678656245133,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "PRESENT_ILLNESS",
+          "EXPLORATION",
+          "TREATMENT"
+        ],
+        "additions": [],
+        "deletions": [
+          "EXPLORATION"
+        ],
+        "substitutions": [],
+        "transpositions": [
+          {
+            "start_offset": 283,
+            "end_offset": 292,
+            "boundary": "EVOLUTION"
+          }
+        ],
+        "count_edits": 0.6743299031294641,
+        "weighted_transpositions": 0.17098347766732155
+      }
+    },
+    "S0212-71992001000400009-1": {
+      "B2": 0.8625712957760425,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "PRESENT_ILLNESS",
+          "EXPLORATION",
+          "TREATMENT",
+          "EVOLUTION",
+          "TREATMENT",
+          "EVOLUTION"
+        ],
+        "additions": [
+          "DERIVED_FROM/TO"
+        ],
+        "deletions": [
+          "EVOLUTION"
+        ],
+        "substitutions": [],
+        "transpositions": [
+          {
+            "start_offset": 219,
+            "end_offset": 240,
+            "boundary": "TREATMENT"
+          }
+        ],
+        "count_edits": 1.5764423955102451,
+        "weighted_transpositions": 0.5290165223326784
+      }
+    },
+    "S0212-71992004001000005-3": {
+      "B2": 0.8375,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "PRESENT_ILLNESS",
+          "EXPLORATION",
+          "TREATMENT",
+          "EVOLUTION",
+          "EXPLORATION"
+        ],
+        "additions": [],
+        "deletions": [],
+        "substitutions": [
+          [
+            "TREATMENT",
+            "EVOLUTION"
+          ]
+        ],
+        "transpositions": [],
+        "count_edits": 1.3,
+        "weighted_transpositions": 0
+      }
+    },
+    "S0212-71992005000200006-1": {
+      "B2": 0.8690717658528042,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "PRESENT_ILLNESS",
+          "EXPLORATION",
+          "TREATMENT",
+          "EVOLUTION"
+        ],
+        "additions": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY"
+        ],
+        "deletions": [],
+        "substitutions": [],
+        "transpositions": [],
+        "count_edits": 1.0474258731775667,
+        "weighted_transpositions": 0
+      }
+    },
+    "S0212-71992005000300008-1": {
+      "B2": 0.9832181196470867,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "PRESENT_ILLNESS",
+          "EXPLORATION",
+          "EVOLUTION",
+          "EXPLORATION",
+          "TREATMENT"
+        ],
+        "additions": [],
+        "deletions": [],
+        "substitutions": [],
+        "transpositions": [
+          {
+            "start_offset": 326,
+            "end_offset": 334,
+            "boundary": "EVOLUTION"
+          }
+        ],
+        "count_edits": 0.14854407429427882,
+        "weighted_transpositions": 0.14854407429427882
+      }
+    },
+    "S0212-71992005000700009-1": {
+      "B2": 0.9132147915467933,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "DERIVED_FROM/TO",
+          "PRESENT_ILLNESS",
+          "EXPLORATION",
+          "TREATMENT",
+          "EVOLUTION",
+          "EXPLORATION",
+          "TREATMENT",
+          "EVOLUTION",
+          "EXPLORATION"
+        ],
+        "additions": [],
+        "deletions": [
+          "EVOLUTION"
+        ],
+        "substitutions": [],
+        "transpositions": [
+          {
+            "start_offset": 514,
+            "end_offset": 515,
+            "boundary": "EVOLUTION"
+          },
+          {
+            "start_offset": 7,
+            "end_offset": 9,
+            "boundary": "PAST_MEDICAL_HISTORY"
+          },
+          {
+            "start_offset": 481,
+            "end_offset": 493,
+            "boundary": "TREATMENT"
+          },
+          {
+            "start_offset": 192,
+            "end_offset": 205,
+            "boundary": "TREATMENT"
+          },
+          {
+            "start_offset": 219,
+            "end_offset": 257,
+            "boundary": "EXPLORATION"
+          }
+        ],
+        "count_edits": 1.717149246658708,
+        "weighted_transpositions": 1.2138028211965655
+      }
+    },
+    "S0212-71992006000100007-1": {
+      "B2": 0.9399259874232936,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "PRESENT_ILLNESS",
+          "TREATMENT",
+          "EVOLUTION",
+          "EXPLORATION",
+          "TREATMENT",
+          "EXPLORATION"
+        ],
+        "additions": [
+          "PRESENT_ILLNESS"
+        ],
+        "deletions": [],
+        "substitutions": [],
+        "transpositions": [
+          {
+            "start_offset": 104,
+            "end_offset": 112,
+            "boundary": "EXPLORATION"
+          }
+        ],
+        "count_edits": 0.6518904997564213,
+        "weighted_transpositions": 0.14854407429427882
+      }
+    },
+    "S0212-71992006000400006-2": {
+      "B2": 0.9066780413026077,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "EXPLORATION",
+          "TREATMENT"
+        ],
+        "additions": [
+          "PRESENT_ILLNESS"
+        ],
+        "deletions": [],
+        "substitutions": [],
+        "transpositions": [
+          {
+            "start_offset": 0,
+            "end_offset": 6,
+            "boundary": "PAST_MEDICAL_HISTORY"
+          },
+          {
+            "start_offset": 180,
+            "end_offset": 186,
+            "boundary": "EVOLUTION"
+          }
+        ],
+        "count_edits": 0.7258145119961261,
+        "weighted_transpositions": 0.2224680865339837
+      }
+    },
+    "S0212-71992006000500007-1": {
+      "B2": 0.653788284273999,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "EXPLORATION",
+          "TREATMENT",
+          "EXPLORATION",
+          "EVOLUTION"
+        ],
+        "additions": [
+          "DERIVED_FROM/TO",
+          "TREATMENT",
+          "EXPLORATION"
+        ],
+        "deletions": [
+          "PRESENT_ILLNESS"
+        ],
+        "substitutions": [],
+        "transpositions": [],
+        "count_edits": 3.4621171572600096,
+        "weighted_transpositions": 0
+      }
+    },
+    "S0212-71992007000200006-1": {
+      "B2": 0.6914772679537038,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "PRESENT_ILLNESS",
+          "EXPLORATION",
+          "EXPLORATION"
+        ],
+        "additions": [],
+        "deletions": [
+          "EVOLUTION",
+          "TREATMENT",
+          "EXPLORATION",
+          "TREATMENT"
+        ],
+        "substitutions": [],
+        "transpositions": [
+          {
+            "start_offset": 185,
+            "end_offset": 195,
+            "boundary": "EVOLUTION"
+          },
+          {
+            "start_offset": 64,
+            "end_offset": 75,
+            "boundary": "TREATMENT"
+          }
+        ],
+        "count_edits": 3.8814284507549313,
+        "weighted_transpositions": 0.41931129349492174
+      }
+    },
+    "S0212-71992007000500005-4": {
+      "B2": 0.9161089290896429,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "PRESENT_ILLNESS",
+          "EXPLORATION",
+          "TREATMENT"
+        ],
+        "additions": [
+          "EVOLUTION"
+        ],
+        "deletions": [],
+        "substitutions": [],
+        "transpositions": [],
+        "count_edits": 0.5033464254621425,
+        "weighted_transpositions": 0
+      }
+    },
+    "S0212-71992007000600005-1": {
+      "B2": 1.0,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "PRESENT_ILLNESS",
+          "TREATMENT",
+          "EXPLORATION",
+          "TREATMENT",
+          "EVOLUTION"
+        ],
+        "additions": [],
+        "deletions": [],
+        "substitutions": [],
+        "transpositions": [
+          {
+            "start_offset": 54,
+            "end_offset": 55,
+            "boundary": "EXPLORATION"
+          }
+        ],
+        "count_edits": 0.0,
+        "weighted_transpositions": 0
+      }
+    },
+    "S0212-71992008000700008-1": {
+      "B2": 1.0,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "PRESENT_ILLNESS",
+          "EXPLORATION"
+        ],
+        "additions": [],
+        "deletions": [],
+        "substitutions": [],
+        "transpositions": [],
+        "count_edits": 0.0,
+        "weighted_transpositions": 0
+      }
+    },
+    "S0213-12852017000400004-1": {
+      "B2": 0.7133019403706216,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "EXPLORATION"
+        ],
+        "additions": [],
+        "deletions": [
+          "PAST_MEDICAL_HISTORY",
+          "PRESENT_ILLNESS"
+        ],
+        "substitutions": [],
+        "transpositions": [
+          {
+            "start_offset": 218,
+            "end_offset": 232,
+            "boundary": "EXPLORATION"
+          },
+          {
+            "start_offset": 161,
+            "end_offset": 191,
+            "boundary": "TREATMENT"
+          }
+        ],
+        "count_edits": 2.01591929285087,
+        "weighted_transpositions": 0.9684934196733035
+      }
+    },
+    "S0325-00752010000100014-1": {
+      "B2": 0.8254290211370723,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "EXPLORATION",
+          "EVOLUTION"
+        ],
+        "additions": [
+          "TREATMENT",
+          "EXPLORATION"
+        ],
+        "deletions": [],
+        "substitutions": [],
+        "transpositions": [],
+        "count_edits": 1.0474258731775667,
+        "weighted_transpositions": 0
+      }
+    },
+    "S0325-00752010000200015-1": {
+      "B2": 0.9440726193930953,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "DERIVED_FROM/TO",
+          "EXPLORATION",
+          "PAST_MEDICAL_HISTORY",
+          "FAMILY_HISTORY",
+          "EXPLORATION",
+          "TREATMENT",
+          "EVOLUTION"
+        ],
+        "additions": [
+          "EXPLORATION"
+        ],
+        "deletions": [],
+        "substitutions": [],
+        "transpositions": [],
+        "count_edits": 0.5033464254621425,
+        "weighted_transpositions": 0
+      }
+    },
+    "S0325-00752010000600014-1": {
+      "B2": 0.8096587867945008,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PRESENT_ILLNESS",
+          "EXPLORATION",
+          "TREATMENT",
+          "EVOLUTION"
+        ],
+        "additions": [
+          "EXPLORATION",
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY"
+        ],
+        "deletions": [],
+        "substitutions": [],
+        "transpositions": [
+          {
+            "start_offset": 6,
+            "end_offset": 7,
+            "boundary": "PAST_MEDICAL_HISTORY"
+          }
+        ],
+        "count_edits": 1.9034121320549928,
+        "weighted_transpositions": 0
+      }
+    },
+    "S0325-00752011000400014-1": {
+      "B2": 0.9023838841735918,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "FAMILY_HISTORY",
+          "EXPLORATION",
+          "EVOLUTION"
+        ],
+        "additions": [],
+        "deletions": [
+          "PAST_MEDICAL_HISTORY"
+        ],
+        "substitutions": [],
+        "transpositions": [
+          {
+            "start_offset": 128,
+            "end_offset": 140,
+            "boundary": "TREATMENT"
+          }
+        ],
+        "count_edits": 0.7562422213116122,
+        "weighted_transpositions": 0.2528957958494697
+      }
+    },
+    "S0325-00752011000400018-1": {
+      "B2": 0.9858996902839975,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "PRESENT_ILLNESS",
+          "TREATMENT",
+          "TREATMENT",
+          "EVOLUTION"
+        ],
+        "additions": [],
+        "deletions": [],
+        "substitutions": [],
+        "transpositions": [
+          {
+            "start_offset": 66,
+            "end_offset": 72,
+            "boundary": "EXPLORATION"
+          }
+        ],
+        "count_edits": 0.11123404326699185,
+        "weighted_transpositions": 0.11123404326699185
+      }
+    },
+    "S0325-00752011000600014-1": {
+      "B2": 0.7333062698987107,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "EXPLORATION",
+          "TREATMENT",
+          "EVOLUTION"
+        ],
+        "additions": [
+          "EVOLUTION",
+          "EXPLORATION"
+        ],
+        "deletions": [
+          "TREATMENT"
+        ],
+        "substitutions": [],
+        "transpositions": [
+          {
+            "start_offset": 158,
+            "end_offset": 168,
+            "boundary": "TREATMENT"
+          },
+          {
+            "start_offset": 133,
+            "end_offset": 158,
+            "boundary": "EXPLORATION"
+          },
+          {
+            "start_offset": 114,
+            "end_offset": 143,
+            "boundary": "EVOLUTION"
+          }
+        ],
+        "count_edits": 3.3483550143543317,
+        "weighted_transpositions": 1.444942882299339
+      }
+    },
+    "S0325-00752013000500016-1": {
+      "B2": 0.9703913867375211,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "FAMILY_HISTORY",
+          "DERIVED_FROM/TO",
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "DERIVED_FROM/TO",
+          "EXPLORATION",
+          "EVOLUTION",
+          "TREATMENT",
+          "EVOLUTION",
+          "EXPLORATION",
+          "TREATMENT",
+          "EXPLORATION"
+        ],
+        "additions": [
+          "EVOLUTION"
+        ],
+        "deletions": [],
+        "substitutions": [],
+        "transpositions": [
+          {
+            "start_offset": 386,
+            "end_offset": 387,
+            "boundary": "EXPLORATION"
+          }
+        ],
+        "count_edits": 0.5033464254621425,
+        "weighted_transpositions": 0
+      }
+    },
+    "S0365-05962011000200021-4": {
+      "B2": 1.0,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "FAMILY_HISTORY",
+          "EXPLORATION",
+          "TREATMENT",
+          "EVOLUTION"
+        ],
+        "additions": [],
+        "deletions": [],
+        "substitutions": [],
+        "transpositions": [],
+        "count_edits": 0.0,
+        "weighted_transpositions": 0
+      }
+    },
+    "S0365-66912004000700011-1": {
+      "B2": 0.5507254138377072,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "EXPLORATION",
+          "TREATMENT"
+        ],
+        "additions": [
+          "EVOLUTION",
+          "PAST_MEDICAL_HISTORY",
+          "EXPLORATION",
+          "EVOLUTION"
+        ],
+        "deletions": [
+          "PRESENT_ILLNESS"
+        ],
+        "substitutions": [],
+        "transpositions": [
+          {
+            "start_offset": 38,
+            "end_offset": 39,
+            "boundary": "FAMILY_HISTORY"
+          },
+          {
+            "start_offset": 327,
+            "end_offset": 359,
+            "boundary": "EXPLORATION"
+          }
+        ],
+        "count_edits": 5.54323834059045,
+        "weighted_transpositions": 0.6618030235343664
+      }
+    },
+    "S0365-66912004001100007-1": {
+      "B2": 0.938131006235956,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "PRESENT_ILLNESS",
+          "EXPLORATION",
+          "TREATMENT",
+          "EVOLUTION",
+          "EXPLORATION",
+          "TREATMENT",
+          "TREATMENT",
+          "EVOLUTION"
+        ],
+        "additions": [],
+        "deletions": [
+          "EVOLUTION"
+        ],
+        "substitutions": [],
+        "transpositions": [
+          {
+            "start_offset": 265,
+            "end_offset": 269,
+            "boundary": "EXPLORATION"
+          },
+          {
+            "start_offset": 192,
+            "end_offset": 206,
+            "boundary": "EXPLORATION"
+          }
+        ],
+        "count_edits": 0.9032907533336139,
+        "weighted_transpositions": 0.39994432787147144
+      }
+    },
+    "S0365-66912005001100007-1": {
+      "B2": 0.7691921895159993,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "TREATMENT",
+          "EVOLUTION",
+          "EVOLUTION",
+          "TREATMENT",
+          "EVOLUTION",
+          "EXPLORATION",
+          "TREATMENT",
+          "EXPLORATION",
+          "TREATMENT"
+        ],
+        "additions": [
+          "EXPLORATION",
+          "EVOLUTION"
+        ],
+        "deletions": [
+          "PRESENT_ILLNESS",
+          "TREATMENT"
+        ],
+        "substitutions": [],
+        "transpositions": [],
+        "count_edits": 3.4621171572600096,
+        "weighted_transpositions": 0
+      }
+    },
+    "S0365-66912006000300008-1": {
+      "B2": 0.8964358193284795,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "PRESENT_ILLNESS",
+          "EXPLORATION",
+          "DERIVED_FROM/TO",
+          "TREATMENT",
+          "EVOLUTION"
+        ],
+        "additions": [],
+        "deletions": [
+          "EXPLORATION",
+          "EVOLUTION"
+        ],
+        "substitutions": [],
+        "transpositions": [
+          {
+            "start_offset": 136,
+            "end_offset": 140,
+            "boundary": "EXPLORATION"
+          }
+        ],
+        "count_edits": 1.1305928659240234,
+        "weighted_transpositions": 0.08316699274645672
+      }
+    },
+    "S0365-66912006001100006-1": {
+      "B2": 0.7065717658528041,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "EXPLORATION",
+          "TREATMENT",
+          "EXPLORATION",
+          "TREATMENT"
+        ],
+        "additions": [],
+        "deletions": [
+          "EVOLUTION",
+          "EXPLORATION"
+        ],
+        "substitutions": [
+          [
+            "EXPLORATION",
+            "EVOLUTION"
+          ]
+        ],
+        "transpositions": [],
+        "count_edits": 2.347425873177567,
+        "weighted_transpositions": 0
+      }
+    },
+    "S0365-66912007000300012-1": {
+      "B2": 1.0,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "DERIVED_FROM/TO",
+          "PAST_MEDICAL_HISTORY",
+          "EXPLORATION",
+          "TREATMENT",
+          "EVOLUTION"
+        ],
+        "additions": [],
+        "deletions": [],
+        "substitutions": [],
+        "transpositions": [],
+        "count_edits": 0.0,
+        "weighted_transpositions": 0
+      }
+    },
+    "S0365-66912007001000011-1": {
+      "B2": 0.7215751993918205,
+      "Statistics": {
+        "matches": [
+          "FAMILY_HISTORY",
+          "EXPLORATION",
+          "DERIVED_FROM/TO",
+          "EXPLORATION"
+        ],
+        "additions": [
+          "EVOLUTION"
+        ],
+        "deletions": [
+          "PRESENT_ILLNESS"
+        ],
+        "substitutions": [
+          [
+            "PAST_MEDICAL_HISTORY",
+            "PRESENT_ILLNESS"
+          ],
+          [
+            "PRESENT_ILLNESS",
+            "EVOLUTION"
+          ]
+        ],
+        "transpositions": [
+          {
+            "start_offset": 0,
+            "end_offset": 1,
+            "boundary": "PAST_MEDICAL_HISTORY"
+          },
+          {
+            "start_offset": 88,
+            "end_offset": 89,
+            "boundary": "TREATMENT"
+          },
+          {
+            "start_offset": 61,
+            "end_offset": 71,
+            "boundary": "EXPLORATION"
+          }
+        ],
+        "count_edits": 3.8433868207575634,
+        "weighted_transpositions": 0.19596094757999674
+      }
+    },
+    "S0365-66912008000600010-1": {
+      "B2": 0.8963824778833639,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "PRESENT_ILLNESS",
+          "EXPLORATION",
+          "TREATMENT"
+        ],
+        "additions": [],
+        "deletions": [],
+        "substitutions": [],
+        "transpositions": [
+          {
+            "start_offset": 83,
+            "end_offset": 114,
+            "boundary": "EVOLUTION"
+          }
+        ],
+        "count_edits": 0.6572228514688238,
+        "weighted_transpositions": 0.6572228514688238
+      }
+    },
+    "S0365-66912008000700011-2": {
+      "B2": 0.8043811772352027,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "DERIVED_FROM/TO",
+          "PRESENT_ILLNESS",
+          "EXPLORATION",
+          "EXPLORATION",
+          "TREATMENT",
+          "EXPLORATION",
+          "TREATMENT",
+          "EVOLUTION"
+        ],
+        "additions": [],
+        "deletions": [
+          "TREATMENT",
+          "EXPLORATION"
+        ],
+        "substitutions": [
+          [
+            "PRESENT_ILLNESS",
+            "EVOLUTION"
+          ]
+        ],
+        "transpositions": [],
+        "count_edits": 2.347425873177567,
+        "weighted_transpositions": 0
+      }
+    },
+    "S0365-66912009000800006-1": {
+      "B2": 1.0,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "EXPLORATION"
+        ],
+        "additions": [],
+        "deletions": [],
+        "substitutions": [],
+        "transpositions": [],
+        "count_edits": 0.0,
+        "weighted_transpositions": 0
+      }
+    },
+    "S0365-66912011000500006-1": {
+      "B2": 0.9496653574537858,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "PRESENT_ILLNESS",
+          "EXPLORATION",
+          "TREATMENT",
+          "EVOLUTION",
+          "EXPLORATION"
+        ],
+        "additions": [
+          "PRESENT_ILLNESS"
+        ],
+        "deletions": [],
+        "substitutions": [],
+        "transpositions": [
+          {
+            "start_offset": 224,
+            "end_offset": 226,
+            "boundary": "TREATMENT"
+          }
+        ],
+        "count_edits": 0.5033464254621425,
+        "weighted_transpositions": 0
+      }
+    },
+    "S0365-66912012000500004-1": {
+      "B2": 0.5146719035181904,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "EXPLORATION",
+          "EXPLORATION",
+          "TREATMENT",
+          "EVOLUTION",
+          "TREATMENT",
+          "EVOLUTION"
+        ],
+        "additions": [
+          "FAMILY_HISTORY",
+          "PAST_MEDICAL_HISTORY",
+          "EVOLUTION",
+          "EXPLORATION",
+          "EVOLUTION",
+          "EXPLORATION"
+        ],
+        "deletions": [],
+        "substitutions": [
+          [
+            "PRESENT_ILLNESS",
+            "EVOLUTION"
+          ]
+        ],
+        "transpositions": [],
+        "count_edits": 7.279921447227145,
+        "weighted_transpositions": 0
+      }
+    },
+    "S0370-41062014000100012-1": {
+      "B2": 0.8532858829264021,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "PRESENT_ILLNESS",
+          "EXPLORATION",
+          "EVOLUTION",
+          "TREATMENT",
+          "EVOLUTION",
+          "TREATMENT",
+          "EXPLORATION",
+          "TREATMENT",
+          "EXPLORATION",
+          "EXPLORATION",
+          "EVOLUTION"
+        ],
+        "additions": [
+          "PAST_MEDICAL_HISTORY"
+        ],
+        "deletions": [
+          "TREATMENT"
+        ],
+        "substitutions": [
+          [
+            "TREATMENT",
+            "EVOLUTION"
+          ]
+        ],
+        "transpositions": [],
+        "count_edits": 2.347425873177567,
+        "weighted_transpositions": 0
+      }
+    },
+    "S0370-41062014000200010-1": {
+      "B2": 0.7958507961982458,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "PRESENT_ILLNESS",
+          "TREATMENT",
+          "EXPLORATION",
+          "EVOLUTION"
+        ],
+        "additions": [
+          "PAST_MEDICAL_HISTORY",
+          "EVOLUTION",
+          "EXPLORATION"
+        ],
+        "deletions": [],
+        "substitutions": [],
+        "transpositions": [
+          {
+            "start_offset": 42,
+            "end_offset": 55,
+            "boundary": "EXPLORATION"
+          }
+        ],
+        "count_edits": 2.1876203586466914,
+        "weighted_transpositions": 0.28420822659169864
+      }
+    },
+    "S0370-41062018005000502-1": {
+      "B2": 0.9370816968172322,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "PRESENT_ILLNESS",
+          "TREATMENT",
+          "EVOLUTION",
+          "TREATMENT",
+          "EVOLUTION"
+        ],
+        "additions": [
+          "TREATMENT"
+        ],
+        "deletions": [],
+        "substitutions": [],
+        "transpositions": [],
+        "count_edits": 0.5033464254621425,
+        "weighted_transpositions": 0
+      }
+    },
+    "S0376-78922009000400002-8": {
+      "B2": 1.0,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "PRESENT_ILLNESS",
+          "TREATMENT",
+          "EVOLUTION"
+        ],
+        "additions": [],
+        "deletions": [],
+        "substitutions": [],
+        "transpositions": [],
+        "count_edits": 0.0,
+        "weighted_transpositions": 0
+      }
+    },
+    "S1135-76062007000100006-1": {
+      "B2": 1.0,
+      "Statistics": {
+        "matches": [
+          "PRESENT_ILLNESS",
+          "PAST_MEDICAL_HISTORY",
+          "FAMILY_HISTORY",
+          "PRESENT_ILLNESS",
+          "EVOLUTION"
+        ],
+        "additions": [],
+        "deletions": [],
+        "substitutions": [],
+        "transpositions": [],
+        "count_edits": 0.0,
+        "weighted_transpositions": 0
+      }
+    }
+  }
+}
