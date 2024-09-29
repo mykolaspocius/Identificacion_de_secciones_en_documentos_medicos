@@ -1,4 +1,8 @@
 
+# Some helper functions
+
+# Creates number id's for each section type
+# It returns direct and inverse relation for them
 def create_label_id_dictionaries(section_types):
     label2id = {}
     id2label = {}
@@ -12,6 +16,8 @@ import json
 from pathlib import Path
 import matplotlib.pyplot as plt
 
+# Used to plot graphs of how the trainning was going with respect to 
+# trainning and evaluation datasets. To check for overfitting
 def graph_trainning_loss(trainer_state_path: Path):
     with open(trainer_state_path,encoding='utf-8') as f:
         trainer_state = json.load(f)
