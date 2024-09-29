@@ -5,6 +5,9 @@ import pylev
 import statistics
 from tqdm import tqdm
 
+# This code is used to evaluate a quolity of repeated translations for the original set.
+# To say it in other words, how much they are different from original
+
 def levenshtein_distance(t1:str,t2:str):
     return pylev.levenshtein(t1.split(" "),t2.split(" "))
 

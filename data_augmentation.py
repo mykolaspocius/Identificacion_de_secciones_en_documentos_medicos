@@ -5,6 +5,12 @@ from predictions import split_entry,get_text_splits,getBoudaryAnnotationsForRang
 from tqdm import tqdm
 import os
 
+# This function translates the entry by sections.
+# It returns t2o arrays: 
+# 1) list of lists of indicies that correspond to id's for each section
+# 2) list of translations for each section independently
+# The section in the original entry can be split in several parts
+# in case it is longer then the maximum length accepted by translation model used.
 def translate_entry(entry:Entry):
     max_accepted_length = int(0.7 * pipe_es_en.tokenizer.model_max_length)
     section2indeces = {}
@@ -26,11 +32,20 @@ def translate_entry(entry:Entry):
             section2indeces[i] = [next_index]
             next_index+=1
     return section2indeces,apply_translation_pipeline(entry_sections_texts)
-    
+
+# not used in production
+# just for testing porposes  
 def translate_sections(entry_sections_texts:List[str])->List[str]:
     res = apply_translation_pipeline(entry_sections_texts)
     return res
-
+    
+# This function is ment to be called from Google Colab platform
+# It takes two paths: original dataset path and path for translated dataset to be saved at
+# The format of the result will be ClinAISDataset
+# It might take many hours to execute this funciton (12 hours aprox.),
+# because of this, with the porpose of not loosing the work done in case of any
+# exception or error douring the execution, this function saves periodicly the progress
+# and in case of restart, starts from where it has left
 def translate_dataset_and_save(dataset_path,translated_dataset_path):
 
     if(not os.path.isfile(translated_dataset_path)):
@@ -98,6 +113,10 @@ def translate_dataset_and_save(dataset_path,translated_dataset_path):
         f.write(translated_dataset.toJson())
     print("Done")
 
+# This functions creates augmented dataset from the original and translated obtained in the
+# previous function.
+# It mixes bouth sets adding '_T' to the key value of the translated dataset entries so they are
+# different from the originals.
 def create_augmented_dataset(train_set_path,translated_train_set_path,save_path):
     with open(train_set_path,encoding='utf-8') as f:
         train_set : ClinAISDataset = ClinAISDataset(**json.load(f))
@@ -117,5 +136,6 @@ def create_augmented_dataset(train_set_path,translated_train_set_path,save_path)
     with open(save_path,'w',encoding='utf-8') as f:
         f.write(augmented_set.toJson())
 
+# This two function calls are an example of how it would be executed in Google Colab
 # translate_dataset_and_save("./ClinAIS_dataset/clinais.train.json","./ClinAIS_dataset/clinais.train.translated.json")
 # create_augmented_dataset("./ClinAIS_dataset/clinais.train.json","./ClinAIS_dataset/clinais.train.translated.json","./ClinAIS_dataset/clinais.train.augmented.json")

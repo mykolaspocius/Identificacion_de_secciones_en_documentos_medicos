@@ -1,3 +1,7 @@
+# This file containes function that is suposed to be called for testing the model
+# After creating predictions of the model it uses a metric created by ClinAIS organizers to score the prediction vs golden standart
+# The results are saved in the path thet is passed as parameter
+
 from predictions import create_predictions_file
 from transformers import pipeline,AutoModelForTokenClassification,AutoTokenizer
 from pathlib import Path
@@ -64,5 +68,5 @@ def test(finetuned_model_path,test_dataset_path,save_predictions_path,save_evalu
 test(
     finetuned_model_path="./models/model6/checkpoint-7820",
     test_dataset_path="./ClinAIS_dataset/clinais.dev.json",
-    save_predictions_path="./models/model6/predictions.json",
-    save_evaluated_path="./models/model6/predictions_evaluated.json")
+    save_predictions_path="./models/model5/predictions.json",
+    save_evaluated_path="./models/model5/predictions_evaluated.json")

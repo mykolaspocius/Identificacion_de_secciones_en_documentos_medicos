@@ -6,6 +6,9 @@ from datasets import Dataset,DatasetDict
 import pandas as pd
 from WordListSplitter import WordListSplitter
 
+# This file contains functions used to prepare a dataset to be processed by the model
+# The goal is to create a tokenized dataset using model's tokenizer with the tokens aligned with their correspondig labels
+
 # Helper function that performs span labbeling
 # The dataset used uses labelling system which consists in labelling only the first token of each section.
 # The rest of tokens are assigned None label.
@@ -54,7 +57,6 @@ def split_entry(entry : dict[List[str],List[int]],word_splitter:WordListSplitter
     labels = get_reshaped_list(target_list=entry['labels'],patern_list=parts)   
     return {'spans':parts,'labels':labels}
 
-# Helper function used to process the batch for reducing example lenghts and realigning labels.
 def tokenize_split_align(batch,tokenizer)->dict:
     tokenized_inputs = tokenizer(batch['spans'],truncation=False,is_split_into_words=True) # tokenize batch
     splits_batch = {'spans':[],'labels':[],'input_ids':[],'attention_mask':[],'aligned_labels':[]} # structure to be filled and returned
@@ -91,7 +93,7 @@ def tokenize_split_align(batch,tokenizer)->dict:
             splits_batch['aligned_labels'].append(label_ids) 
     return splits_batch
  
-# Recursive helper function for tokenizing and adjusting example size to not exceed the max accepted one
+   
 def tokenize_dataset_dict(dataset_dict : DatasetDict,tokenizer)->DatasetDict:
     def process_batch(batch):
         return tokenize_split_align(batch,tokenizer)

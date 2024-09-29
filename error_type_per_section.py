@@ -6,7 +6,21 @@ import numpy as np
 import json
 from dataset_model import *
 
+<<<<<<< HEAD
 # Error categories
+=======
+# This code is used to create graphs for hilighting error in model predictions
+
+results = {
+    "PRESENT_ILLNESS": [10, 15, 17, 32],
+    "DERIVED_FROM_TO": [26, 22, 29, 10],
+    "PAST_MEDICAL_HISTORY": [35, 37, 7, 2],
+    "FAMILY_HISTORY": [32, 11, 9, 15],
+    "EXPLORATION": [21, 29, 5, 5],
+    "TREATMENT": [8, 19, 5, 30]
+}
+
+>>>>>>> 79d9736731c1584e693b258b86ab4005b4bd33ec
 category_names = ['Corecto', 'Adiciones','Eliminaciones', 'Substituciones']
 
 with open("./models/model4/predictions_evaluated.json",encoding='utf-8') as f:
@@ -65,6 +79,7 @@ def plot_error_per_section(results, category_names):
 
 plot_error_per_section(results, category_names)
 plt.show()
+<<<<<<< HEAD
 
 # with open("./models/model4/predictions.json",encoding='utf-8') as f:
 #     predictions : ClinAISDataset = ClinAISDataset(**json.load(f)) 
@@ -75,3 +90,5 @@ plt.show()
 # print(prediction.section_annotation.gold)
 # print()
 # print(prediction.section_annotation.prediction)
+=======
+>>>>>>> 79d9736731c1584e693b258b86ab4005b4bd33ec

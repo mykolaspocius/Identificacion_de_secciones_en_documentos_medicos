@@ -1,8 +1,9 @@
+# This file contains all the postpocessing for modelo predictions.
+# It is self explanatory what is done to predictions to improve the results.
 from dataset_model import *
 from tqdm import tqdm
 from pydantic import BaseModel
 from typing import List
-
 
 class PredictionSection(BaseModel):
     entity_group : ClinicalSections

@@ -1,6 +1,8 @@
 import evaluate
 import numpy as np
 
+# Metrics to be used douring trainning
+
 def get_seqeval_metrics(id2label:dict):
     seqeval = evaluate.load("seqeval")
     def metrics(p):

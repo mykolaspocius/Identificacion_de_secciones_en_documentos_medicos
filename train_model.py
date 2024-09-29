@@ -1,3 +1,7 @@
+# This file contains the code used to train the model
+# The function get_trainer is ment to be called in Google Colab
+# It returns the Trainer object that can be executed to train the model with a given parameters
+
 from dataset_model import *
 from data_preparation_pipeline import execute_data_preparation_pipeline
 from misc import create_label_id_dictionaries

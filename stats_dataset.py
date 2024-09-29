@@ -1,3 +1,5 @@
+# This file is used to create a plot that shows how different sections are
+# distributed in train and dev datasets
 
 import numpy as np
 import matplotlib.pyplot as plt 
