@@ -5,6 +5,12 @@ from predictions import split_entry,get_text_splits,getBoudaryAnnotationsForRang
 from tqdm import tqdm
 import os
 
+# This function translates the entry by sections.
+# It returns t2o arrays: 
+# 1) list of lists of indicies that correspond to id's for each section
+# 2) list of translations for each section independently
+# The section in the original entry can be split in several parts
+# in case it is longer then the maximum length accepted by translation model used.
 def translate_entry(entry:Entry):
     max_accepted_length = int(0.7 * pipe_es_en.tokenizer.model_max_length)
     section2indeces = {}
@@ -26,11 +32,20 @@ def translate_entry(entry:Entry):
             section2indeces[i] = [next_index]
             next_index+=1
     return section2indeces,apply_translation_pipeline(entry_sections_texts)
-    
+
+# not used in production
+# just for testing porposes  
 def translate_sections(entry_sections_texts:List[str])->List[str]:
     res = apply_translation_pipeline(entry_sections_texts)
     return res
-
+    
+# This function is ment to be called from Google Colab platform
+# It takes two paths: original dataset path and path for translated dataset to be saved at
+# The format of the result will be ClinAISDataset
+# It might take many hours to execute this funciton (12 hours aprox.),
+# because of this, with the porpose of not loosing the work done in case of any
+# exception or error douring the execution, this function saves periodicly the progress
+# and in case of restart, starts from where it has left
 def translate_dataset_and_save(dataset_path,translated_dataset_path):
 
     if(not os.path.isfile(translated_dataset_path)):
