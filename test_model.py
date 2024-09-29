@@ -1,3 +1,7 @@
+# This file containes function that is suposed to be called for testing the model
+# After creating predictions of the model it uses a metric created by ClinAIS organizers to score the prediction vs golden standart
+# The results are saved in the path thet is passed as parameter
+
 from predictions import create_predictions_file
 from transformers import pipeline,AutoModelForTokenClassification,AutoTokenizer
 from pathlib import Path
