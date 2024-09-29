@@ -1,5 +1,13 @@
-# This file contains function used to prepear a data corpus for passing it to Trainer
-
+# This file contains function used to prepear a data corpus for passing it to Trainer.
+# It takes the following steps:
+# 1. Load the data into ClinAISDataset structures
+# 2. Create Dataset objects for train and validation datasets and put them into DatasetDict object
+#       in this step tokens are labbeled by using label2id function, which
+#       asigns numeric id to each label used in the model.
+# 3. Tokenize bouth datasets using tokenizer past as a parameter
+#       in this step the spans contained in each example are tokenized into tokens used by a tokenizer.
+#       Examples that are longer than max axepted length by the model are split into smaller ones.
+#       This process is repeated several times, until all examples are of an acceptable length.
 from dataset_model import *
 from data_preparation import create_dataset_object,tokenize_dataset_dict
 from datasets import Dataset,DatasetDict
