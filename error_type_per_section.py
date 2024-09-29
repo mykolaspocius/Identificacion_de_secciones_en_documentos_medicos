@@ -3,6 +3,8 @@ import numpy as np
 import json
 from dataset_model import *
 
+# This code is used to create graphs for hilighting error in model predictions
+
 results = {
     "PRESENT_ILLNESS": [10, 15, 17, 32],
     "DERIVED_FROM_TO": [26, 22, 29, 10],
