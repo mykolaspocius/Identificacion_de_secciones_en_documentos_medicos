@@ -2,12 +2,17 @@
 from typing import List
 from dataset_model import *
 
+# This object is used to split a list of spans into smaller sublists that are less then max_size
+# It uses a list of split_caracters which contains a list of caracters that can be used as splitting points
 class WordListSplitter():
     def __init__(self,max_size : int,min_size : int,split_caracter_list=['.',',',';',':']):
         self.max_size = max_size
         self.min_size = min_size
         self.split_caracters = split_caracter_list
-
+        
+    # This function looks for spans ending with split caracter
+    # checks if it is a final span and ads possible split position to positions
+    # It returns a position more close to the center of the list of spans
     def get_split_index(self,spans:list[str],caracter='.'):
         positions = []
         for idx,span in enumerate(spans):
@@ -19,7 +24,10 @@ class WordListSplitter():
         if(len(positions)==0): return -1
         avg_of_positions = sum(positions) / len(positions)
         return min(positions, key=lambda x: abs(x - avg_of_positions))
-    
+
+    # This function splits in a recursive maner the list of spans given
+    # It uses split_caracter_index for desiding the caracter to be used for desiding split position
+    # If it runs out of caracters, the list is split in half
     def split(self,spans : List[str],split_caracter_index=0):
         if(len(spans)>self.max_size):
             spos = self.get_split_index(spans,self.split_caracters[split_caracter_index])
@@ -37,6 +45,9 @@ class WordListSplitter():
         else:
             return [spans]
 
+# Similar to a class before.
+# The only difference are the parameters in and out
+# This object uses objects from ClinAISDataset class as parameters
 class EntrySplitter():
     def __init__(self,max_size : int,min_size : int,split_caracter_list=['.',',',';',':']):
         self.max_size = max_size
