@@ -1,17 +1,26 @@
+# This file containes code used in data_preparation_pipeline.py
+
 from typing import List
 from dataset_model import *
 from datasets import Dataset,DatasetDict
 import pandas as pd
 from WordListSplitter import WordListSplitter
 
+# Helper function that performs span labbeling
+# The dataset used uses labelling system which consists in labelling only the first token of each section.
+# The rest of tokens are assigned None label.
+# This function assigns same label to each token of the same section.
 def get_labelled_span_list(b_annotations : BoundaryAnnotations):
-    cur_label = [None] 
+    cur_label = [None] # array is used to be able to pass as a reference
     def get_label(boundary):
         if (boundary != None):
             cur_label[0] = boundary
         return cur_label
     return [(b_annotation.span, get_label(b_annotation.boundary)[0]) for b_annotation in b_annotations]
 
+# Helper function which takes a labeled span list and,
+# using label2id dictionary, asigns a numeric id to each label.
+# Dataset object containning 'spans' and 'labels' features is returned
 def create_dataset_object(data_set : ClinAISDataset,label2id : dict)->Dataset:
     spans_labels = []
     for _,entry in data_set.annotated_entries.items():
@@ -37,19 +46,27 @@ def get_reshaped_list(target_list,patern_list)->List:
         cur_pos+=len(sublist)
     return result
 
+# Helper function which splits a list of spans into smaller sublists.
+# It uses customized WordListSplitter to achive this.
+# After the span splits are ready, the second dict List is reshaped to have same dimenssions as the span splits
 def split_entry(entry : dict[List[str],List[int]],word_splitter:WordListSplitter):
     parts = word_splitter.split(entry['spans'])
     labels = get_reshaped_list(target_list=entry['labels'],patern_list=parts)   
     return {'spans':parts,'labels':labels}
 
+# Helper function used to process the batch for reducing example lenghts and realigning labels.
 def tokenize_split_align(batch,tokenizer)->dict:
     tokenized_inputs = tokenizer(batch['spans'],truncation=False,is_split_into_words=True) # tokenize batch
-    splits_batch = {'spans':[],'labels':[],'input_ids':[],'attention_mask':[],'aligned_labels':[]}
+    splits_batch = {'spans':[],'labels':[],'input_ids':[],'attention_mask':[],'aligned_labels':[]} # structure to be filled and returned
     for i,input_ids in enumerate(tokenized_inputs['input_ids']): # for each entry in the batch:
         if (len(input_ids)>tokenizer.model_max_length): # check entry length
+            # It is not possible to know the exact token number resulting from tokenizing the spans
+            # before actually doing it. To ensure min number of calls to this function the max_length parameter
+            # to pass to WordListSplitter is calculated using a fraction of desired size and the current one.
             max_length = int((tokenizer.model_max_length/len(input_ids))*len(batch['spans'][i])) # set reduction factor
             splits = split_entry({'spans':batch['spans'][i],'labels':batch['labels'][i]},WordListSplitter(max_size=max_length,min_size=3)) # split entry
-            for spans,labels in zip(splits['spans'],splits['labels']): # add new splits to the dataset
+            # add new splits to the dataset
+            for spans,labels in zip(splits['spans'],splits['labels']):
                 splits_batch['spans'].append(spans)
                 splits_batch['labels'].append(labels)
                 splits_batch['input_ids'].append([])
@@ -74,7 +91,7 @@ def tokenize_split_align(batch,tokenizer)->dict:
             splits_batch['aligned_labels'].append(label_ids) 
     return splits_batch
  
-   
+# Recursive helper function for tokenizing and adjusting example size to not exceed the max accepted one
 def tokenize_dataset_dict(dataset_dict : DatasetDict,tokenizer)->DatasetDict:
     def process_batch(batch):
         return tokenize_split_align(batch,tokenizer)

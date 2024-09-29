@@ -35,4 +35,4 @@ def graph_trainning_loss(trainer_state_path: Path):
     plt.legend()
     plt.show()
 
-#graph_trainning_loss("./models/model6/checkpoint-1564/trainer_state.json")
+# graph_trainning_loss("./models/model6/checkpoint-7820/trainer_state.json")

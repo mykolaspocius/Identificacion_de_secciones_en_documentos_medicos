@@ -1,3 +1,4 @@
+# This file containes code used to split lists of spans
 
 from typing import List
 from dataset_model import *

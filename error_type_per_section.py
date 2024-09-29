@@ -1,22 +1,18 @@
+# This file contains the code used to create the graph
+# of percentage of error categories per section type in Model 4 predictions
+
 import matplotlib.pyplot as plt
 import numpy as np
 import json
 from dataset_model import *
 
-results = {
-    "PRESENT_ILLNESS": [10, 15, 17, 32],
-    "DERIVED_FROM_TO": [26, 22, 29, 10],
-    "PAST_MEDICAL_HISTORY": [35, 37, 7, 2],
-    "FAMILY_HISTORY": [32, 11, 9, 15],
-    "EXPLORATION": [21, 29, 5, 5],
-    "TREATMENT": [8, 19, 5, 30]
-}
-
+# Error categories
 category_names = ['Corecto', 'Adiciones','Eliminaciones', 'Substituciones']
 
 with open("./models/model4/predictions_evaluated.json",encoding='utf-8') as f:
     evaluated_data = json.load(f)
-    
+
+# Calculate num errors of each category in each section.    
 scores = evaluated_data["Scores per file"]
 stats_per_section_type = {section_type:{stats_type:0 for stats_type in category_names} for section_type in ClinicalSections.list()}
 for note_id,data in scores.items():
@@ -37,19 +33,10 @@ for section_type,stats in stats_per_section_type.items():
     results[section_type] = [round(num/total,2)*100 for stats_type,num in stats.items()]
     
 # print(results)
-        
-        
+ 
+# Function used to plot the results       
 def plot_error_per_section(results, category_names):
-    """
-    Parameters
-    ----------
-    results : dict
-        A mapping from question labels to a list of answers per category.
-        It is assumed all lists contain the same number of entries and that
-        it matches the length of *category_names*.
-    category_names : list of str
-        The category labels.
-    """
+
     labels = list(results.keys())
     data = np.array(list(results.values()))
     data_cum = data.cumsum(axis=1)
@@ -76,15 +63,15 @@ def plot_error_per_section(results, category_names):
     return fig, ax
 
 
-# plot_error_per_section(results, category_names)
-# plt.show()
+plot_error_per_section(results, category_names)
+plt.show()
 
-with open("./models/model4/predictions.json",encoding='utf-8') as f:
-    predictions : ClinAISDataset = ClinAISDataset(**json.load(f)) 
+# with open("./models/model4/predictions.json",encoding='utf-8') as f:
+#     predictions : ClinAISDataset = ClinAISDataset(**json.load(f)) 
 
-"S0034-98872009000700011-1"  
+# "S0034-98872009000700011-1"  
     
-prediction = predictions.annotated_entries["S0034-98872012001000013-1"]
-print(prediction.section_annotation.gold)
-print()
-print(prediction.section_annotation.prediction)
+# prediction = predictions.annotated_entries["S0034-98872012001000013-1"]
+# print(prediction.section_annotation.gold)
+# print()
+# print(prediction.section_annotation.prediction)
