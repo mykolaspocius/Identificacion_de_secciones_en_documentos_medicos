@@ -3,6 +3,8 @@ import json
 import numpy as np
 import matplotlib.pyplot as plt 
 
+# This code is used to create graph for showing type of errors in model predicionts
+
 def evaluate_error_per_section(evaluated_path,evaluation_set_path):
     with open(evaluated_path,encoding='utf-8') as f:
         evaluated_data = json.load(f)
