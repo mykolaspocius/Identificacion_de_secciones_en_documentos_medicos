@@ -26,7 +26,7 @@ entrenamiento. Los resultados obtenidos estaban en el rango de lo esperado.
 # Como se creó el datset aumentado
 En la plataforma Google Colab, una vez importadas todas las dependencias se ejecutan las siguientes
 dos funciones (Los directorios donde aparece el dataset clinais.train.json no se incluye, ya que no es un dataset de dominio público. Para obtenerlo, tiene que ponerse en contacto con los organizadores de la competición ClinAIS).:
-```
+```python
 translate_dataset_and_save("./ClinAIS_dataset/clinais.train.json","./ClinAIS_dataset/clinais.train.translated.json")
 create_augmented_dataset("./ClinAIS_dataset/clinais.train.json","./ClinAIS_dataset/clinais.train.translated.json","./ClinAIS_dataset/clinais.train.augmented.json")
 ```
