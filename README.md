@@ -31,7 +31,7 @@ translate_dataset_and_save("./ClinAIS_dataset/clinais.train.json","./ClinAIS_dat
 create_augmented_dataset("./ClinAIS_dataset/clinais.train.json","./ClinAIS_dataset/clinais.train.translated.json","./ClinAIS_dataset/clinais.train.augmented.json")
 ```
 # Para probar el modelo
-Se puede ejecutar la siguiente función para probar un modelo creado
+Se puede ejecutar la siguiente función para probar un modelo creado, que se encuentra an test_model.py
 ```python
 test(
      finetuned_model_path="./models/model4/checkpoint-3910",
