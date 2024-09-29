@@ -23,6 +23,9 @@ técnicas de aumento de datos, diferentes modelos preentrenados como partida y r
 la complejidad del modelo mediante la congelación de ciertos parámetros antes de comenzar el
 entrenamiento. Los resultados obtenidos estaban en el rango de lo esperado.
 
+# Porqué faltan algunos directorios y archivos
+Este código se ha creado como parte del Trabajo Fin de Grado. No se trata de un programa como tal, que se puede ejecutar con un simple click. Además, algunos archivos, como los datasets que se usaron para entrenar los modelos, no están disponibles publicamente, o tienen un tamaño demasiado grande. Por lo tanto, esto es una mera demostración de como se ha creado el modelo que se puede probar en la aplicación web que se mencionó en la parte inicial de este documento.
+
 # Como se creó el datset aumentado
 En la plataforma Google Colab, una vez importadas todas las dependencias se ejecutan las siguientes
 dos funciones (Los directorios donde aparece el dataset clinais.train.json no se incluye, ya que no es un dataset de dominio público. Para obtenerlo, tiene que ponerse en contacto con los organizadores de la competición ClinAIS).:
