@@ -1,3 +1,5 @@
+# This file contains the test code that was used during the development
+
 import unittest
 from dataset_model import *
 from datasets import Dataset
