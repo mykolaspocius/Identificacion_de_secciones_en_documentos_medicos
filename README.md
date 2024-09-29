@@ -30,3 +30,12 @@ dos funciones (Los directorios donde aparece el dataset clinais.train.json no se
 translate_dataset_and_save("./ClinAIS_dataset/clinais.train.json","./ClinAIS_dataset/clinais.train.translated.json")
 create_augmented_dataset("./ClinAIS_dataset/clinais.train.json","./ClinAIS_dataset/clinais.train.translated.json","./ClinAIS_dataset/clinais.train.augmented.json")
 ```
+# Para probar el modelo
+Se puede ejecutar la siguiente función para probar un modelo creado
+```python
+test(
+     finetuned_model_path="./models/model4/checkpoint-3910",
+     test_dataset_path="./ClinAIS_dataset/clinais.dev.json",
+     save_predictions_path="./finetuned_models/model4/predictions.json",
+     save_evaluated_path="./finetuned_models/model4/predictions_evaluated.json")
+```
