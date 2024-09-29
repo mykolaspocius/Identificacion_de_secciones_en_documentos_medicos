@@ -30,6 +30,40 @@ dos funciones (Los directorios donde aparece el dataset clinais.train.json no se
 translate_dataset_and_save("./ClinAIS_dataset/clinais.train.json","./ClinAIS_dataset/clinais.train.translated.json")
 create_augmented_dataset("./ClinAIS_dataset/clinais.train.json","./ClinAIS_dataset/clinais.train.translated.json","./ClinAIS_dataset/clinais.train.augmented.json")
 ```
+# Para entrenar un modelo
+Se crea la función get_trainer con los parametros que nos interese:
+```python
+def get_trainer_M4(
+        train_data_path="./ClinAIS_dataset/clinais.train.augmented.json",
+        val_data_path="./ClinAIS_dataset/clinais.dev.json",
+        output_dir='./models/model4'):
+    return get_trainer(
+        train_data_path=train_data_path,
+        val_data_path=val_data_path,
+        base_model_id="PlanTL-GOB-ES/longformer-base-4096-biomedical-clinical-es",
+        train_args=TrainingArguments(
+            output_dir=output_dir,
+            learning_rate=8.48e-5,
+            per_device_train_batch_size=4,
+            per_device_eval_batch_size=4,
+            num_train_epochs=10,
+            weight_decay=3.73e-03,
+            evaluation_strategy="epoch",
+            save_strategy="epoch",
+            load_best_model_at_end=True,
+        )
+    )
+```
+y a continuación se llama:
+```python
+trainer = get_trainer_M4()
+```
+Para comenzar el entrenamiento:
+```python
+trainer.train()
+```
+El resultado se irá guardando en el path indicado en get_trainer_M4
+
 # Para probar el modelo
 Se puede ejecutar la siguiente función para probar un modelo creado, que se encuentra an test_model.py
 ```python
