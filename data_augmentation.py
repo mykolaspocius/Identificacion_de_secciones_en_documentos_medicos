@@ -113,6 +113,10 @@ def translate_dataset_and_save(dataset_path,translated_dataset_path):
         f.write(translated_dataset.toJson())
     print("Done")
 
+# This functions creates augmented dataset from the original and translated obtained in the
+# previous function.
+# It mixes bouth sets adding '_T' to the key value of the translated dataset entries so they are
+# different from the originals.
 def create_augmented_dataset(train_set_path,translated_train_set_path,save_path):
     with open(train_set_path,encoding='utf-8') as f:
         train_set : ClinAISDataset = ClinAISDataset(**json.load(f))
@@ -132,5 +136,6 @@ def create_augmented_dataset(train_set_path,translated_train_set_path,save_path)
     with open(save_path,'w',encoding='utf-8') as f:
         f.write(augmented_set.toJson())
 
+# This two function calls are an example of how it would be executed in Google Colab
 # translate_dataset_and_save("./ClinAIS_dataset/clinais.train.json","./ClinAIS_dataset/clinais.train.translated.json")
 # create_augmented_dataset("./ClinAIS_dataset/clinais.train.json","./ClinAIS_dataset/clinais.train.translated.json","./ClinAIS_dataset/clinais.train.augmented.json")
